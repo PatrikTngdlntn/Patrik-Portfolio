@@ -1,0 +1,1428 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patrik Tangdilintin | Developer & Data Enthusiast</title>
+    <!-- Use the compiled output CSS -->
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Ionicons for icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body
+    class="bg-gray-50 text-gray-900 dark:bg-slate-900 dark:text-gray-100 transition-colors duration-300 font-sans antialiased overflow-x-hidden"
+  >
+    <!-- Navigation -->
+    <nav
+      class="fixed top-6 left-1/2 -translate-x-1/2 z-50 py-3 px-6 rounded-full bg-white/70 dark:bg-slate-800/70 backdrop-blur-md border border-gray-200 dark:border-gray-700 shadow-sm flex items-center justify-between md:justify-center gap-6 w-[max-content] min-w-[250px] md:min-w-0 max-w-[90vw] overflow-visible"
+    >
+      <span class="md:hidden font-bold tracking-wider text-sm pr-12">PT.</span>
+      <ul class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <li><a href="#home" class="nav-link" data-i18n="nav_home">Home</a></li>
+        <li>
+          <a href="#about" class="nav-link" data-i18n="nav_about">About</a>
+        </li>
+        <li>
+          <a href="#journey" class="nav-link" data-i18n="nav_journey"
+            >Journey</a
+          >
+        </li>
+        <li>
+          <a href="#projects" class="nav-link" data-i18n="nav_projects"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a href="#contact" class="nav-link" data-i18n="nav_contact"
+            >Contact</a
+          >
+        </li>
+      </ul>
+      <div class="hidden md:block w-px h-5 bg-gray-300 dark:bg-gray-600"></div>
+      <div class="hidden md:flex items-center gap-3">
+        <button
+          id="lang-toggle"
+          class="p-1.5 px-3 rounded-full hover:bg-gray-200 dark:hover:bg-slate-700 transition-colors font-bold text-sm tracking-wide flex items-center gap-1"
+          aria-label="Switch Language"
+        >
+          <ion-icon name="language-outline" class="text-lg"></ion-icon>
+          <span id="current-lang-text">EN</span>
+        </button>
+        <button
+          id="theme-toggle"
+          class="p-1.5 rounded-full hover:bg-gray-200 dark:hover:bg-slate-700 transition-colors"
+          aria-label="Toggle Dark Mode"
+        >
+          <ion-icon
+            name="moon-outline"
+            id="theme-icon"
+            class="text-lg"
+          ></ion-icon>
+        </button>
+      </div>
+      <button
+        id="mobile-menu-btn"
+        class="md:hidden p-1.5 text-2xl flex items-center justify-center rounded-full hover:bg-gray-200 dark:hover:bg-slate-700 transition-colors absolute right-4"
+        aria-label="Open Menu"
+      >
+        <ion-icon name="menu-outline" id="mobile-menu-icon"></ion-icon>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div
+      id="mobile-menu"
+      class="fixed inset-0 z-40 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md flex flex-col items-center justify-center opacity-0 pointer-events-none transition-all duration-300 ease-in-out transform -translate-y-4 md:hidden"
+    >
+      <ul class="flex flex-col items-center gap-8 text-2xl font-semibold mb-12">
+        <li>
+          <a
+            href="#home"
+            class="mobile-nav-link hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            data-i18n="nav_home"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="#about"
+            class="mobile-nav-link hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            data-i18n="nav_about"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            href="#journey"
+            class="mobile-nav-link hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            data-i18n="nav_journey"
+            >Journey</a
+          >
+        </li>
+        <li>
+          <a
+            href="#projects"
+            class="mobile-nav-link hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            data-i18n="nav_projects"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a
+            href="#contact"
+            class="mobile-nav-link hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            data-i18n="nav_contact"
+            >Contact</a
+          >
+        </li>
+      </ul>
+      <div class="flex items-center gap-6">
+        <button
+          id="mobile-lang-toggle"
+          class="p-4 rounded-full bg-gray-100 dark:bg-slate-800 hover:bg-gray-200 dark:hover:bg-slate-700 transition-colors flex items-center justify-center gap-2 font-bold"
+          aria-label="Switch Language"
+        >
+          <ion-icon name="language-outline" class="text-2xl"></ion-icon>
+          <span id="mobile-current-lang-text">EN</span>
+        </button>
+        <button
+          id="mobile-theme-toggle"
+          class="p-4 rounded-full bg-gray-100 dark:bg-slate-800 hover:bg-gray-200 dark:hover:bg-slate-700 transition-colors flex items-center justify-center"
+          aria-label="Toggle Dark Mode"
+        >
+          <ion-icon
+            name="moon-outline"
+            id="mobile-theme-icon"
+            class="text-2xl"
+          ></ion-icon>
+        </button>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="min-h-screen flex items-center pt-28 md:pt-24 pb-12 px-6 md:px-12 lg:px-24 mx-auto max-w-7xl"
+    >
+      <div
+        class="w-full flex flex-col lg:flex-row gap-12 lg:gap-16 items-center"
+      >
+        <!-- Mobile: Image moves to top via order-1 -->
+        <!-- Desktop: Image is on the right, so order-2 -->
+        <!-- Left Side: Text Content -->
+        <div
+          class="animate-on-scroll order-2 lg:order-1 text-center lg:text-left flex-1 flex flex-col items-center lg:items-start w-full"
+        >
+          <!-- Welcome greeting -->
+          <h2
+            class="text-blue-600 dark:text-blue-400 font-semibold text-xs md:text-sm mb-3 uppercase tracking-[0.2em]"
+            data-i18n="hero_hello"
+          >
+            HELLO, I AM
+          </h2>
+          <!-- Name -->
+          <h1
+            class="text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight mb-4 leading-tight"
+          >
+            Patrik <br class="hidden lg:block" />Tangdilintin
+          </h1>
+
+          <!-- Role with bg underline trick -->
+          <div class="relative inline-block mb-8">
+            <p
+              class="text-lg md:text-xl lg:text-2xl font-serif text-gray-800 dark:text-gray-100 relative z-10"
+              data-i18n="hero_roles"
+            >
+              Junior Web Developer & Data Enthusiast
+            </p>
+            <span
+              class="absolute bottom-1 left-0 w-full h-3 bg-blue-200 dark:bg-blue-900/50 -z-10 transform -rotate-1 rounded-sm"
+            ></span>
+          </div>
+
+          <!-- Socials Row -->
+          <div
+            class="flex items-center justify-center lg:justify-start gap-5 mb-8 text-gray-600 dark:text-gray-400"
+          >
+            <a
+              href="https://github.com/patrik121212"
+              target="_blank"
+              rel="noopener"
+              class="hover:text-gray-900 dark:hover:text-white transition-colors"
+              aria-label="GitHub"
+            >
+              <ion-icon name="logo-github" class="text-2xl"></ion-icon>
+            </a>
+            <a
+              href="https://linkedin.com/"
+              target="_blank"
+              rel="noopener"
+              class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              aria-label="LinkedIn"
+            >
+              <ion-icon name="logo-linkedin" class="text-2xl"></ion-icon>
+            </a>
+            <!-- instagram -->
+            <a
+              href="https://instagram.com/"
+              target="_blank"
+              rel="noopener"
+              class="hover:text-pink-600 dark:hover:text-pink-400 transition-colors"
+              aria-label="Instagram"
+            >
+              <ion-icon name="logo-instagram" class="text-2xl"></ion-icon>
+            </a>
+            <!-- Tiktok -->
+            <a
+              href="https://tiktok.com/@insightaa"
+              target="_blank"
+              rel="noopener"
+              class="hover:text-gray-900 dark:hover:text-white transition-colors flex items-center gap-1"
+              aria-label="TikTok"
+            >
+              <ion-icon name="logo-tiktok" class="text-2xl"></ion-icon>
+              <span class="text-sm font-medium"></span>
+            </a>
+          </div>
+
+          <!-- Short description -->
+          <p
+            class="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-10 max-w-xl text-center lg:text-left leading-relaxed"
+            data-i18n="hero_desc"
+          >
+            I help build efficient web solutions and transform data into
+            meaningful insights.
+          </p>
+
+          <!-- Buttons side by side -->
+          <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+            <a
+              href="#"
+              class="px-8 py-3.5 bg-gray-900 text-white dark:bg-white dark:text-gray-900 font-medium rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2 group"
+            >
+              <span data-i18n="hero_download_cv">Download CV</span>
+              <ion-icon
+                name="arrow-down-outline"
+                class="text-lg group-hover:translate-y-1 transition-transform"
+              ></ion-icon>
+            </a>
+            <a
+              href="#contact"
+              class="px-8 py-3.5 border-2 border-gray-200 text-gray-900 dark:border-gray-700 dark:text-white font-medium rounded-full hover:border-gray-900 dark:hover:border-white transition-all duration-300 flex items-center justify-center"
+              data-i18n="hero_contact_me"
+            >
+              Contact Me
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Side: Profile Card -->
+        <div
+          class="animate-on-scroll order-1 lg:order-2 flex justify-center w-full lg:w-auto mt-10 lg:mt-0"
+        >
+          <div
+            class="relative w-64 h-[22rem] sm:w-80 sm:h-[26rem] lg:w-96 lg:h-[30rem] bg-white dark:bg-slate-800 rounded-3xl shadow-2xl p-4 md:p-5 flex flex-col justify-between border border-gray-100 dark:border-gray-700 transform transition-transform duration-500 hover:-translate-y-2 group"
+          >
+            <!-- Photo container -->
+            <div
+              class="relative w-full h-[85%] rounded-2xl overflow-hidden shadow-inner bg-gray-200 dark:bg-slate-700"
+            >
+              <img
+                src="./assets/foto-patrik.jpg"
+                alt="Patrik Tangdilintin"
+                class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+
+              <!-- Gradient Overlay -->
+              <div
+                class="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black/70 to-transparent"
+              ></div>
+
+              <!-- Name Overlay in Photo -->
+              <div
+                class="absolute bottom-4 left-5 right-5 flex justify-between items-end"
+              >
+                <div>
+                  <h3
+                    class="text-white font-bold text-lg md:text-xl tracking-wide mb-1 transition-transform transform translate-y-2 group-hover:translate-y-0 opacity-90 group-hover:opacity-100"
+                  >
+                    Patrik T.
+                  </h3>
+                  <p
+                    class="text-gray-300 text-xs md:text-sm font-medium"
+                    data-i18n="hero_overlay_role"
+                  >
+                    Web Developer
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Status Bar -->
+            <div
+              class="h-[12%] flex items-center justify-between px-2 w-full pt-1"
+            >
+              <div class="flex items-center gap-2.5">
+                <span class="relative flex h-3 w-3">
+                  <span
+                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"
+                  ></span>
+                  <span
+                    class="relative inline-flex rounded-full h-3 w-3 bg-green-500"
+                  ></span>
+                </span>
+                <span
+                  class="text-sm font-medium text-gray-700 dark:text-gray-300 tracking-wide"
+                  data-i18n="hero_status_online"
+                  >Online</span
+                >
+              </div>
+              <a
+                href="https://github.com/insightaa"
+                target="_blank"
+                rel="noopener"
+                class="text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
+                aria-label="GitHub Profile"
+              >
+                <ion-icon name="open-outline" class="text-xl"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section
+      id="about"
+      class="py-20 px-6 md:px-12 lg:px-24 bg-white dark:bg-slate-800/50"
+    >
+      <div
+        class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-16"
+      >
+        <div
+          class="animate-on-scroll lg:w-1/2 flex justify-center lg:justify-start w-full"
+        >
+          <div
+            class="relative w-full max-w-[280px] md:max-w-[320px] aspect-[4/5] rounded-tl-[3rem] rounded-br-[3rem] md:rounded-tl-[4rem] md:rounded-br-[4rem] overflow-hidden shadow-2xl"
+          >
+            <img
+              src="./assets/patrik.jpg"
+              alt="About Patrik"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent"
+            ></div>
+          </div>
+        </div>
+        <div class="animate-on-scroll lg:w-1/2 text-center lg:text-left">
+          <h2
+            class="text-3xl md:text-4xl font-serif font-bold mb-6 relative inline-block"
+          >
+            <span data-i18n="about_title">About Me</span>
+            <span
+              class="absolute -bottom-2 left-1/2 -translate-x-1/2 lg:left-0 lg:translate-x-0 w-12 h-1 bg-blue-600 rounded-full"
+            ></span>
+          </h2>
+          <div
+            class="space-y-6 text-gray-600 dark:text-gray-300 text-base md:text-lg leading-relaxed text-left"
+          >
+            <p data-i18n="about_p1">
+              I am a passionate
+              <strong>Junior Web Developer & Data Enthusiast</strong> dedicated
+              to building scalable web solutions and analyzing data patterns.
+              With a strong blend of analytical skills and creative web
+              development, I aim to bridge the gap between complex data logic
+              and intuitive user experiences.
+            </p>
+            <p data-i18n="about_p2">
+              My focus lies heavily in utilizing modern frameworks and
+              data-driven approaches to deliver impactful software products.
+              Whether it's crafting an aesthetic user interface or implementing
+              robust clustering algorithms, I bring dedication and precision to
+              every project.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Journey (Education & Experience Combined) -->
+    <section
+      id="journey"
+      class="py-20 md:py-24 px-6 md:px-12 lg:px-24 mx-auto max-w-7xl"
+    >
+      <h2
+        class="text-3xl md:text-4xl font-serif font-bold mb-12 md:mb-16 text-center animate-on-scroll"
+        data-i18n="journey_title"
+      >
+        The Journey
+      </h2>
+
+      <div class="grid lg:grid-cols-2 gap-16 lg:gap-16">
+        <!-- Left Column: Education -->
+        <div class="animate-on-scroll">
+          <h3
+            class="text-xl md:text-2xl font-semibold mb-8 flex items-center justify-center lg:justify-start gap-3"
+          >
+            <ion-icon name="school-outline" class="text-blue-500"></ion-icon>
+            <span data-i18n="journey_education">Education</span>
+          </h3>
+          <div
+            class="relative border-l-2 border-gray-200 dark:border-gray-700 ml-4 md:ml-6 pl-6 md:pl-10 space-y-10 pr-2"
+          >
+            <div class="relative">
+              <div
+                class="absolute -left-[35px] md:-left-[51px] top-1 h-5 w-5 rounded-full bg-blue-500 ring-4 ring-gray-50 dark:ring-slate-900"
+              ></div>
+              <h4 class="text-lg md:text-xl font-bold">
+                Universitas Dipa Makassar
+              </h4>
+              <span
+                class="text-sm text-blue-600 dark:text-blue-400 font-medium block mb-2"
+                >2021 - 2025</span
+              >
+              <p class="text-gray-600 dark:text-gray-400 font-medium mb-3">
+                IPK: 3.31
+              </p>
+              <div
+                class="bg-white dark:bg-slate-800 rounded-2xl p-4 md:p-5 border border-gray-100 dark:border-gray-700 shadow-sm mt-3"
+              >
+                <p
+                  class="text-sm text-gray-600 dark:text-gray-300"
+                  data-i18n="journey_thesis"
+                >
+                  <strong>Thesis:</strong> IMPLEMENTATION OF DBSCAN ALGORITHM
+                  FOR VEHICLE INSURANCE PRODUCT SALES SEGMENTATION BASED ON
+                  PURCHASE PATTERNS AND PREMIUM PRICES.
+                </p>
+              </div>
+            </div>
+
+            <div class="relative">
+              <div
+                class="absolute -left-[35px] md:-left-[51px] top-1 h-5 w-5 rounded-full bg-gray-300 dark:bg-gray-600 ring-4 ring-gray-50 dark:ring-slate-900"
+              ></div>
+              <h4 class="text-lg md:text-xl font-bold">SMAN 4 Luwu</h4>
+              <span
+                class="text-sm text-gray-500 dark:text-gray-400 font-medium block mb-2"
+                data-i18n="journey_graduated"
+                >Graduated 2021</span
+              >
+              <p
+                class="text-sm text-gray-600 dark:text-gray-300"
+                data-i18n="journey_diploma"
+              >
+                High School Diploma
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Experience -->
+        <div class="animate-on-scroll">
+          <h3
+            class="text-xl md:text-2xl font-semibold mb-8 flex items-center justify-center lg:justify-start gap-3"
+          >
+            <ion-icon name="briefcase-outline" class="text-blue-500"></ion-icon>
+            <span data-i18n="journey_experience">Experience & Leadership</span>
+          </h3>
+
+          <div class="space-y-6 md:space-y-8 mb-12">
+            <div class="flex items-start gap-4">
+              <div
+                class="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center flex-shrink-0 text-blue-600 dark:text-blue-400 shadow-sm"
+              >
+                <ion-icon
+                  name="code-working-outline"
+                  class="text-xl"
+                ></ion-icon>
+              </div>
+              <div>
+                <div class="flex items-center gap-2 flex-wrap">
+                  <h4
+                    class="text-base md:text-lg font-bold"
+                    data-i18n="exp1_role"
+                  >
+                    UI/UX Designer (KKL)
+                  </h4>
+                </div>
+                <p
+                  class="text-gray-600 dark:text-gray-400 text-xs md:text-sm font-medium"
+                  data-i18n="exp1_org"
+                >
+                  PT. Grocee Indonesia
+                </p>
+                <ul
+                  class="list-disc list-outside ml-4 mt-2 text-sm text-gray-600 dark:text-gray-300 space-y-1"
+                >
+                  <li data-i18n="exp1_bp1">
+                    Participate in designing the user interface (UI) and user
+                    experience (UX) for the Course application.
+                  </li>
+                  <li data-i18n="exp1_bp2">
+                    Create intuitive, user-centric wireframes, user flows, and
+                    high-fidelity prototypes.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div
+                class="w-12 h-12 rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center flex-shrink-0 text-purple-600 dark:text-purple-400 shadow-sm"
+              >
+                <ion-icon
+                  name="color-palette-outline"
+                  class="text-xl"
+                ></ion-icon>
+              </div>
+              <div>
+                <h4
+                  class="text-base md:text-lg font-bold"
+                  data-i18n="exp2_role"
+                >
+                  Vice Chairman
+                </h4>
+                <p
+                  class="text-gray-600 dark:text-gray-400 text-xs md:text-sm font-medium"
+                  data-i18n="exp2_org"
+                >
+                  Sanggar Seni Sipakario
+                </p>
+                <ul
+                  class="list-disc list-outside ml-4 mt-2 text-sm text-gray-600 dark:text-gray-300 space-y-1"
+                >
+                  <li data-i18n="exp2_bp1">
+                    Coordinated artistic performances and managed guild
+                    activities.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Showcase (Tab System) -->
+    <section id="projects" class="py-20 bg-white dark:bg-slate-800/50">
+      <div class="max-w-7xl mx-auto px-4 md:px-8">
+        <h2
+          class="text-3xl md:text-4xl font-serif font-bold mb-10 text-center animate-on-scroll"
+          data-i18n="portfolio_title"
+        >
+          Showcase
+        </h2>
+
+        <!-- Tab Navigation -->
+        <div
+          class="flex flex-wrap items-center justify-center gap-2 md:gap-4 mb-12 animate-on-scroll"
+        >
+          <button
+            class="tab-btn bg-gray-900 text-white dark:bg-white dark:text-gray-900 shadow-md px-5 md:px-6 py-2 md:py-2.5 rounded-full font-medium text-sm md:text-base border border-transparent transition-all focus:outline-none"
+            data-target="tab-projects"
+            data-i18n="tab_projects"
+          >
+            Projects
+          </button>
+          <button
+            class="tab-btn bg-white text-gray-600 hover:bg-gray-50 dark:bg-slate-800 dark:text-gray-300 dark:hover:bg-slate-700 px-5 md:px-6 py-2 md:py-2.5 rounded-full font-medium text-sm md:text-base border border-gray-200 dark:border-gray-700 transition-all focus:outline-none"
+            data-target="tab-certificates"
+            data-i18n="tab_certificates"
+          >
+            Certificates
+          </button>
+          <button
+            class="tab-btn bg-white text-gray-600 hover:bg-gray-50 dark:bg-slate-800 dark:text-gray-300 dark:hover:bg-slate-700 px-5 md:px-6 py-2 md:py-2.5 rounded-full font-medium text-sm md:text-base border border-gray-200 dark:border-gray-700 transition-all focus:outline-none"
+            data-target="tab-tech"
+            data-i18n="tab_tech"
+          >
+            Tech Stack
+          </button>
+        </div>
+
+        <!-- Tab Content Area -->
+        <div class="tab-contents relative min-h-[400px] w-full">
+          <!-- Tab: Projects -->
+          <div
+            id="tab-projects"
+            class="tab-pane transition-opacity duration-300 opacity-100 block"
+          >
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8"
+            >
+              <!-- Project 1: Restoranku -->
+              <div
+                class="group bg-gray-50 dark:bg-slate-800 rounded-2xl border border-gray-100 dark:border-gray-700 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
+              >
+                <div
+                  class="aspect-[4/3] relative overflow-hidden bg-gray-200 dark:bg-slate-700"
+                >
+                  <img
+                    src="../assets/restoranku.png"
+                    alt="Restoranku — Restaurant Management System"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6"
+                  >
+                    <a
+                      href="https://github.com/PatrikTngdlntn/Restoranku"
+                      target="_blank"
+                      rel="noopener"
+                      class="w-12 h-12 bg-white text-gray-900 rounded-full flex items-center justify-center shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 hover:bg-gray-100"
+                      aria-label="GitHub Repository"
+                    >
+                      <ion-icon name="logo-github" class="text-2xl"></ion-icon>
+                    </a>
+                  </div>
+                  <!-- Badge -->
+                  <span
+                    class="absolute top-3 left-3 px-3 py-1 bg-red-600 text-white text-[10px] font-bold uppercase tracking-widest rounded-full shadow-md"
+                    >Laravel 12</span
+                  >
+                </div>
+                <div class="p-5 md:p-6 flex flex-col flex-1">
+                  <h3 class="text-lg md:text-xl font-bold mb-2">Restoranku</h3>
+                  <p
+                    class="text-gray-600 dark:text-gray-400 text-sm mb-4 leading-relaxed flex-1"
+                    data-i18n="project1_desc"
+                  >
+                    An advanced Laravel 12 restaurant application featuring QR
+                    Code ordering and real-time transaction management.
+                    Integrated with Midtrans Payment Gateway for automated QRIS
+                    payments, the system utilizes secure role-based
+                    authentication for Admins, Cashiers, and Chefs, complete
+                    with interactive sales analytics.
+                  </p>
+                  <!-- Feature highlights -->
+                  <ul
+                    class="text-xs text-gray-500 dark:text-gray-400 space-y-1.5 mb-4"
+                  >
+                    <li class="flex items-center gap-2">
+                      <ion-icon
+                        name="checkmark-circle"
+                        class="text-green-500 text-sm flex-shrink-0"
+                      ></ion-icon>
+                      <span data-i18n="proj1_f1"
+                        >Midtrans Payment Gateway (QRIS & Tunai)</span
+                      >
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <ion-icon
+                        name="checkmark-circle"
+                        class="text-green-500 text-sm flex-shrink-0"
+                      ></ion-icon>
+                      <span data-i18n="proj1_f2"
+                        >QR Code Menu & Dynamic Analytics Dashboard</span
+                      >
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <ion-icon
+                        name="checkmark-circle"
+                        class="text-green-500 text-sm flex-shrink-0"
+                      ></ion-icon>
+                      <span data-i18n="proj1_f3"
+                        >Multi-role Authentication (Admin, Kasir, Chef)</span
+                      >
+                    </li>
+                  </ul>
+                  <div class="flex flex-wrap gap-2 text-xs font-medium">
+                    <span
+                      class="px-2.5 py-1 bg-red-50 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-md"
+                      >Laravel 12</span
+                    >
+                    <span
+                      class="px-2.5 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-md"
+                      >MySQL</span
+                    >
+                    <span
+                      class="px-2.5 py-1 bg-yellow-50 dark:bg-yellow-900/30 text-yellow-600 dark:text-yellow-400 rounded-md"
+                      >Blade</span
+                    >
+                    <span
+                      class="px-2.5 py-1 bg-teal-50 dark:bg-teal-900/30 text-teal-600 dark:text-teal-400 rounded-md"
+                      >Tailwind</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 2: Personal Finance OCR -->
+              <div
+                class="group bg-gray-50 dark:bg-slate-800 rounded-2xl border border-gray-100 dark:border-gray-700 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
+              >
+                <div
+                  class="aspect-[4/3] relative overflow-hidden bg-gray-200 dark:bg-slate-700"
+                >
+                  <img
+                    src="../assets/Pesonalfinance.png"
+                    alt="Personal Finance — OCR-Powered Finance Tracker"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6"
+                  >
+                    <a
+                      href="https://github.com/PatrikTngdlntn/personal-finance-app"
+                      target="_blank"
+                      rel="noopener"
+                      class="w-12 h-12 bg-white text-gray-900 rounded-full flex items-center justify-center shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 hover:bg-gray-100"
+                      aria-label="GitHub Repository"
+                    >
+                      <ion-icon name="logo-github" class="text-2xl"></ion-icon>
+                    </a>
+                  </div>
+                  <!-- Badge -->
+                  <span
+                    class="absolute top-3 left-3 px-3 py-1 bg-emerald-600 text-white text-[10px] font-bold uppercase tracking-widest rounded-full shadow-md"
+                    >OCR Powered</span
+                  >
+                </div>
+                <div class="p-5 md:p-6 flex flex-col flex-1">
+                  <h3 class="text-lg md:text-xl font-bold mb-2">
+                    Personal Finance
+                  </h3>
+                  <p
+                    class="text-gray-600 dark:text-gray-400 text-sm mb-4 leading-relaxed flex-1"
+                    data-i18n="project2_desc"
+                  >
+                    An intelligent personal finance tracker powered by OCR
+                    technology that automatically scans and extracts transaction
+                    data from receipts &amp; invoices. Features smart expense
+                    categorization, monthly budget planning, visual spending
+                    analytics, and exportable financial reports.
+                  </p>
+                  <!-- Feature highlights -->
+                  <ul
+                    class="text-xs text-gray-500 dark:text-gray-400 space-y-1.5 mb-4"
+                  >
+                    <li class="flex items-center gap-2">
+                      <ion-icon
+                        name="checkmark-circle"
+                        class="text-green-500 text-sm flex-shrink-0"
+                      ></ion-icon>
+                      <span data-i18n="proj2_f1"
+                        >OCR receipt scanning &amp; auto-extraction</span
+                      >
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <ion-icon
+                        name="checkmark-circle"
+                        class="text-green-500 text-sm flex-shrink-0"
+                      ></ion-icon>
+                      <span data-i18n="proj2_f2"
+                        >Smart expense categorization &amp; budgeting</span
+                      >
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <ion-icon
+                        name="checkmark-circle"
+                        class="text-green-500 text-sm flex-shrink-0"
+                      ></ion-icon>
+                      <span data-i18n="proj2_f3"
+                        >Visual spending analytics &amp; reports</span
+                      >
+                    </li>
+                  </ul>
+                  <div class="flex flex-wrap gap-2 text-xs font-medium">
+                    <span
+                      class="px-2.5 py-1 bg-red-50 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-md"
+                      >Laravel 12</span
+                    >
+                    <span
+                      class="px-2.5 py-1 bg-green-50 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-md"
+                      >Tesseract OCR</span
+                    >
+                    <span
+                      class="px-2.5 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-md"
+                      >MySQL</span
+                    >
+                    <span
+                      class="px-2.5 py-1 bg-purple-50 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-md"
+                      >Chart.js</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 3: DBSCAN Clustering (Thesis) -->
+              <div
+                class="group bg-gray-50 dark:bg-slate-800 rounded-2xl border border-gray-100 dark:border-gray-700 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
+              >
+                <div
+                  class="aspect-[4/3] relative overflow-hidden bg-gray-200 dark:bg-slate-700"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?fit=crop&w=600&q=80"
+                    alt="DBSCAN Clustering — Thesis Research Project"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6"
+                  >
+                    <a
+                      href="https://github.com/PatrikTngdlntn/dbscan_asuransi"
+                      target="_blank"
+                      rel="noopener"
+                      class="w-12 h-12 bg-white text-gray-900 rounded-full flex items-center justify-center shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 hover:bg-gray-100"
+                      aria-label="GitHub Repository"
+                    >
+                      <ion-icon name="logo-github" class="text-2xl"></ion-icon>
+                    </a>
+                  </div>
+                  <!-- Badge -->
+                  <span
+                    class="absolute top-3 left-3 px-3 py-1 bg-indigo-600 text-white text-[10px] font-bold uppercase tracking-widest rounded-full shadow-md"
+                    >Thesis Project</span
+                  >
+                </div>
+                <div class="p-5 md:p-6 flex flex-col flex-1">
+                  <h3 class="text-lg md:text-xl font-bold mb-2">
+                    DBSCAN Clustering
+                  </h3>
+                  <p
+                    class="text-gray-600 dark:text-gray-400 text-sm mb-4 leading-relaxed flex-1"
+                    data-i18n="project3_desc"
+                  >
+                    A data science research project implementing the DBSCAN
+                    (Density-Based Spatial Clustering) algorithm for vehicle
+                    insurance product sales segmentation. Analyzes real-world
+                    purchase patterns and premium price distributions to
+                    identify distinct customer segments, enabling data-driven
+                    marketing strategies.
+                  </p>
+                  <!-- Feature highlights -->
+                  <ul
+                    class="text-xs text-gray-500 dark:text-gray-400 space-y-1.5 mb-4"
+                  >
+                    <li class="flex items-center gap-2">
+                      <ion-icon
+                        name="checkmark-circle"
+                        class="text-green-500 text-sm flex-shrink-0"
+                      ></ion-icon>
+                      <span data-i18n="proj3_f1"
+                        >DBSCAN density-based clustering engine</span
+                      >
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <ion-icon
+                        name="checkmark-circle"
+                        class="text-green-500 text-sm flex-shrink-0"
+                      ></ion-icon>
+                      <span data-i18n="proj3_f2"
+                        >Interactive data visualization &amp; cluster
+                        mapping</span
+                      >
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <ion-icon
+                        name="checkmark-circle"
+                        class="text-green-500 text-sm flex-shrink-0"
+                      ></ion-icon>
+                      <span data-i18n="proj3_f3"
+                        >Customer segmentation &amp; pattern analysis</span
+                      >
+                    </li>
+                  </ul>
+                  <div class="flex flex-wrap gap-2 text-xs font-medium">
+                    <span
+                      class="px-2.5 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-md"
+                      >Python</span
+                    >
+                    <span
+                      class="px-2.5 py-1 bg-purple-50 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-md"
+                      >Pandas</span
+                    >
+                    <span
+                      class="px-2.5 py-1 bg-orange-50 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 rounded-md"
+                      >Scikit-learn</span
+                    >
+                    <span
+                      class="px-2.5 py-1 bg-green-50 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-md"
+                      >Matplotlib</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab: Certificates -->
+          <div id="tab-certificates" class="tab-pane hidden animate-on-scroll">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <!-- CODEPOLITAN JAVASCRIP -->
+              <div
+                class="bg-gray-50 dark:bg-slate-800 rounded-2xl border border-gray-100 dark:border-gray-700 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group"
+              >
+                <!-- Image top -->
+                <div
+                  class="w-full bg-gray-100 dark:bg-slate-700 flex items-center justify-center overflow-hidden"
+                >
+                  <img
+                    src="./assets/Codepolitan-js.png"
+                    alt="CODEPOLITAN Belajar JavaScript Dasar"
+                    class="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <!-- Descripton Bottom -->
+                <div class="p-6">
+                  <h3 class="text-lg md:text-xl font-bold mb-2">
+                    CODEPOLITAN Full Stack Developer
+                  </h3>
+                  <p
+                    class="text-gray-600 dark:text-gray-400 text-sm mb-5"
+                    data-i18n="cert_prof"
+                  >
+                    A certificate of completion for the Learn JavaScript Basics
+                    class that validates your fundamental understanding of
+                    JavaScript programming.
+                  </p>
+                  <a
+                    href="https://codepolitan.com/c/UYG0B8V"
+                    target="_blank"
+                    rel="noopener"
+                    class="inline-flex items-center gap-2 text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
+                  >
+                    <span data-i18n="cert_view">View Credential</span>
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
+
+              <!--CODEPOLITAN Backend-->
+              <div
+                class="bg-gray-50 dark:bg-slate-800 rounded-2xl border border-gray-100 dark:border-gray-700 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group"
+              >
+                <!-- Image top -->
+                <div
+                  class="w-full bg-gray-100 dark:bg-slate-700 flex items-center justify-center overflow-hidden"
+                >
+                  <img
+                    src="./assets/Codepolitan-Backend.png"
+                    alt="IBM Certificate"
+                    class="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <!-- Descripton Bottom -->
+                <div class="p-6">
+                  <h3 class="text-lg md:text-xl font-bold mb-2">
+                    CODEPOLITAN Laravel 11: Backend Social Media
+                  </h3>
+                  <p
+                    class="text-gray-600 dark:text-gray-400 text-sm mb-5"
+                    data-i18n="cert_prof2"
+                  >
+                    Certificate of competency in building Backend architecture
+                    and REST API for social media applications using Laravel 11.
+                  </p>
+                  <a
+                    href="https://codepolitan.com/c/AB8WK17"
+                    target="_blank"
+                    rel="noopener"
+                    class="inline-flex items-center gap-2 text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
+                  >
+                    <span data-i18n="cert_view2">View Credential</span>
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
+
+              <!--IBM FULLSTACK-->
+              <div
+                class="bg-gray-50 dark:bg-slate-800 rounded-2xl border border-gray-100 dark:border-gray-700 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group"
+              >
+                <!-- Image top -->
+                <div
+                  class="w-full bg-gray-100 dark:bg-slate-700 flex items-center justify-center overflow-hidden"
+                >
+                  <img
+                    src="./assets/IBM.jpg"
+                    alt="IBM Certificate"
+                    class="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <!-- Descripton Bottom -->
+                <div class="p-6">
+                  <h3 class="text-lg md:text-xl font-bold mb-2">
+                    IBM Full Stack Software Developer
+                  </h3>
+                  <p
+                    class="text-gray-600 dark:text-gray-400 text-sm mb-5"
+                    data-i18n="cert_prof3"
+                  >
+                    Professional Certificate detailing competency in modern
+                    application workflows.
+                  </p>
+                  <a
+                    href="#"
+                    class="inline-flex items-center gap-2 text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
+                  >
+                    <span data-i18n="cert_view3">View Credential</span>
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
+
+              <!--KKL-PT.GROCEE TEKNOLOGI INDONESIA-->
+              <div
+                class="bg-gray-50 dark:bg-slate-800 rounded-2xl border border-gray-100 dark:border-gray-700 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group"
+              >
+                <!-- Image top -->
+                <div
+                  class="w-full bg-gray-100 dark:bg-slate-700 flex items-center justify-center overflow-hidden"
+                >
+                  <img
+                    src="./assets/sertifikat-Grooce.png"
+                    alt="IBM Certificate"
+                    class="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <!-- Descripton Bottom -->
+                <div class="p-6">
+                  <h3 class="text-lg md:text-xl font-bold mb-2">
+                    KKL - PT Grocee Teknologi Indonesia
+                  </h3>
+                  <p
+                    class="text-gray-600 dark:text-gray-400 text-sm mb-5"
+                    data-i18n="cert_prof4"
+                  >
+                    Participate for one month in designing the user interface
+                    (UI) and user experience (UX) for the Course application.
+                    Focus on creating wireframes, user flows, and high-fidelity,
+                    imaginative prototypes.
+                  </p>
+                  <a
+                    href="#"
+                    class="inline-flex items-center gap-2 text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
+                  >
+                    <span data-i18n="cert_view4">View Project Showcase</span>
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab: Tech Stack -->
+          <div id="tab-tech" class="tab-pane hidden animate-on-scroll">
+            <div
+              class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 w-full"
+            >
+              <!-- PHP Laravel -->
+              <div
+                class="w-full h-full overflow-hidden bg-white dark:bg-slate-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center justify-center text-center hover:-translate-y-1 transition-transform duration-300 group"
+              >
+                <ion-icon
+                  name="logo-laravel"
+                  class="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 mx-auto text-4xl md:text-5xl text-red-600 mb-3 group-hover:scale-110 transition-transform object-contain"
+                ></ion-icon>
+                <h4 class="font-bold text-sm md:text-base mb-2">PHP Laravel</h4>
+                <div
+                  class="w-full bg-gray-100 dark:bg-slate-700 rounded-full h-1.5 mb-2 mt-auto"
+                >
+                  <div
+                    class="progress-bar bg-red-600 h-1.5 rounded-full w-0 transition-all duration-1000 ease-out"
+                    data-target="85%"
+                  ></div>
+                </div>
+                <span
+                  class="text-xs sm:text-sm text-gray-500 dark:text-gray-400 font-medium tracking-wide"
+                  >85% <span data-i18n="tech_prof">PROFICIENCY</span></span
+                >
+              </div>
+
+              <!-- PostgreSQL -->
+              <div
+                class="w-full h-full overflow-hidden bg-white dark:bg-slate-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center justify-center text-center hover:-translate-y-1 transition-transform duration-300 group"
+              >
+                <ion-icon
+                  name="server-outline"
+                  class="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 mx-auto text-4xl md:text-5xl text-blue-500 mb-3 group-hover:scale-110 transition-transform object-contain"
+                ></ion-icon>
+                <h4 class="font-bold text-sm md:text-base mb-2">PostgreSQL</h4>
+                <div
+                  class="w-full bg-gray-100 dark:bg-slate-700 rounded-full h-1.5 mb-2 mt-auto"
+                >
+                  <div
+                    class="progress-bar bg-blue-500 h-1.5 rounded-full w-0 transition-all duration-1000 ease-out"
+                    data-target="75%"
+                  ></div>
+                </div>
+                <span
+                  class="text-xs sm:text-sm text-gray-500 dark:text-gray-400 font-medium tracking-wide"
+                  >75% <span data-i18n="tech_prof">PROFICIENCY</span></span
+                >
+              </div>
+
+              <!-- React.js -->
+              <div
+                class="w-full h-full overflow-hidden bg-white dark:bg-slate-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center justify-center text-center hover:-translate-y-1 transition-transform duration-300 group"
+              >
+                <ion-icon
+                  name="logo-react"
+                  class="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 mx-auto text-4xl md:text-5xl text-cyan-400 mb-3 group-hover:scale-110 transition-transform object-contain"
+                ></ion-icon>
+                <h4 class="font-bold text-sm md:text-base mb-2">React.js</h4>
+                <div
+                  class="w-full bg-gray-100 dark:bg-slate-700 rounded-full h-1.5 mb-2 mt-auto"
+                >
+                  <div
+                    class="progress-bar bg-cyan-400 h-1.5 rounded-full w-0 transition-all duration-1000 ease-out"
+                    data-target="80%"
+                  ></div>
+                </div>
+                <span
+                  class="text-xs sm:text-sm text-gray-500 dark:text-gray-400 font-medium tracking-wide"
+                  >80% <span data-i18n="tech_prof">PROFICIENCY</span></span
+                >
+              </div>
+
+              <!-- Node.js -->
+              <div
+                class="w-full h-full overflow-hidden bg-white dark:bg-slate-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center justify-center text-center hover:-translate-y-1 transition-transform duration-300 group"
+              >
+                <ion-icon
+                  name="logo-nodejs"
+                  class="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 mx-auto text-4xl md:text-5xl text-green-500 mb-3 group-hover:scale-110 transition-transform object-contain"
+                ></ion-icon>
+                <h4 class="font-bold text-sm md:text-base mb-2">Node.js</h4>
+                <div
+                  class="w-full bg-gray-100 dark:bg-slate-700 rounded-full h-1.5 mb-2 mt-auto"
+                >
+                  <div
+                    class="progress-bar bg-green-500 h-1.5 rounded-full w-0 transition-all duration-1000 ease-out"
+                    data-target="70%"
+                  ></div>
+                </div>
+                <span
+                  class="text-xs sm:text-sm text-gray-500 dark:text-gray-400 font-medium tracking-wide"
+                  >70% <span data-i18n="tech_prof">PROFICIENCY</span></span
+                >
+              </div>
+
+              <!-- Next.js -->
+              <div
+                class="w-full h-full overflow-hidden bg-white dark:bg-slate-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center justify-center text-center hover:-translate-y-1 transition-transform duration-300 group"
+              >
+                <ion-icon
+                  name="layers-outline"
+                  class="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 mx-auto text-4xl md:text-5xl text-gray-900 dark:text-white mb-3 group-hover:scale-110 transition-transform object-contain"
+                ></ion-icon>
+                <h4 class="font-bold text-sm md:text-base mb-2">Next.js</h4>
+                <div
+                  class="w-full bg-gray-100 dark:bg-slate-700 rounded-full h-1.5 mb-2 mt-auto"
+                >
+                  <div
+                    class="progress-bar bg-gray-900 dark:bg-white h-1.5 rounded-full w-0 transition-all duration-1000 ease-out"
+                    data-target="75%"
+                  ></div>
+                </div>
+                <span
+                  class="text-xs sm:text-sm text-gray-500 dark:text-gray-400 font-medium tracking-wide"
+                  >75% <span data-i18n="tech_prof">PROFICIENCY</span></span
+                >
+              </div>
+
+              <!-- MySQL -->
+              <div
+                class="w-full h-full overflow-hidden bg-white dark:bg-slate-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center justify-center text-center hover:-translate-y-1 transition-transform duration-300 group"
+              >
+                <ion-icon
+                  name="cube-outline"
+                  class="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 mx-auto text-4xl md:text-5xl text-blue-800 dark:text-blue-400 mb-3 group-hover:scale-110 transition-transform object-contain"
+                ></ion-icon>
+                <h4 class="font-bold text-sm md:text-base mb-2">MySQL</h4>
+                <div
+                  class="w-full bg-gray-100 dark:bg-slate-700 rounded-full h-1.5 mb-2 mt-auto"
+                >
+                  <div
+                    class="progress-bar bg-blue-800 dark:bg-blue-400 h-1.5 rounded-full w-0 transition-all duration-1000 ease-out"
+                    data-target="80%"
+                  ></div>
+                </div>
+                <span
+                  class="text-xs sm:text-sm text-gray-500 dark:text-gray-400 font-medium tracking-wide"
+                  >80% <span data-i18n="tech_prof">PROFICIENCY</span></span
+                >
+              </div>
+
+              <!-- JavaScript -->
+              <div
+                class="w-full h-full overflow-hidden bg-white dark:bg-slate-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center justify-center text-center hover:-translate-y-1 transition-transform duration-300 group"
+              >
+                <ion-icon
+                  name="logo-javascript"
+                  class="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 mx-auto text-4xl md:text-5xl text-yellow-500 mb-3 group-hover:scale-110 transition-transform object-contain"
+                ></ion-icon>
+                <h4 class="font-bold text-sm md:text-base mb-2">JavaScript</h4>
+                <div
+                  class="w-full bg-gray-100 dark:bg-slate-700 rounded-full h-1.5 mb-2 mt-auto"
+                >
+                  <div
+                    class="progress-bar bg-yellow-500 h-1.5 rounded-full w-0 transition-all duration-1000 ease-out"
+                    data-target="90%"
+                  ></div>
+                </div>
+                <span
+                  class="text-xs sm:text-sm text-gray-500 dark:text-gray-400 font-medium tracking-wide"
+                  >90% <span data-i18n="tech_prof">PROFICIENCY</span></span
+                >
+              </div>
+
+              <!-- Tailwind CSS -->
+              <div
+                class="w-full h-full overflow-hidden bg-white dark:bg-slate-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center justify-center text-center hover:-translate-y-1 transition-transform duration-300 group"
+              >
+                <ion-icon
+                  name="color-palette-outline"
+                  class="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 mx-auto text-4xl md:text-5xl text-teal-500 mb-3 group-hover:scale-110 transition-transform object-contain"
+                ></ion-icon>
+                <h4 class="font-bold text-sm md:text-base mb-2">
+                  Tailwind CSS
+                </h4>
+                <div
+                  class="w-full bg-gray-100 dark:bg-slate-700 rounded-full h-1.5 mb-2 mt-auto"
+                >
+                  <div
+                    class="progress-bar bg-teal-500 h-1.5 rounded-full w-0 transition-all duration-1000 ease-out"
+                    data-target="95%"
+                  ></div>
+                </div>
+                <span
+                  class="text-xs sm:text-sm text-gray-500 dark:text-gray-400 font-medium tracking-wide"
+                  >95% <span data-i18n="tech_prof">PROFICIENCY</span></span
+                >
+              </div>
+
+              <!-- HTML5 -->
+              <div
+                class="w-full h-full overflow-hidden bg-white dark:bg-slate-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center justify-center text-center hover:-translate-y-1 transition-transform duration-300 group"
+              >
+                <ion-icon
+                  name="logo-html5"
+                  class="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 mx-auto text-4xl md:text-5xl text-orange-500 mb-3 group-hover:scale-110 transition-transform object-contain"
+                ></ion-icon>
+                <h4 class="font-bold text-sm md:text-base mb-2">HTML5</h4>
+                <div
+                  class="w-full bg-gray-100 dark:bg-slate-700 rounded-full h-1.5 mb-2 mt-auto"
+                >
+                  <div
+                    class="progress-bar bg-orange-500 h-1.5 rounded-full w-0 transition-all duration-1000 ease-out"
+                    data-target="95%"
+                  ></div>
+                </div>
+                <span
+                  class="text-xs sm:text-sm text-gray-500 dark:text-gray-400 font-medium tracking-wide"
+                  >95% <span data-i18n="tech_prof">PROFICIENCY</span></span
+                >
+              </div>
+
+              <!-- GitHub -->
+              <div
+                class="w-full h-full overflow-hidden bg-white dark:bg-slate-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center justify-center text-center hover:-translate-y-1 transition-transform duration-300 group"
+              >
+                <ion-icon
+                  name="logo-github"
+                  class="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 mx-auto text-4xl md:text-5xl text-gray-900 dark:text-white mb-3 group-hover:scale-110 transition-transform object-contain"
+                ></ion-icon>
+                <h4 class="font-bold text-sm md:text-base mb-2">GitHub</h4>
+                <div
+                  class="w-full bg-gray-100 dark:bg-slate-700 rounded-full h-1.5 mb-2 mt-auto"
+                >
+                  <div
+                    class="progress-bar bg-gray-900 dark:bg-white h-1.5 rounded-full w-0 transition-all duration-1000 ease-out"
+                    data-target="90%"
+                  ></div>
+                </div>
+                <span
+                  class="text-xs sm:text-sm text-gray-500 dark:text-gray-400 font-medium tracking-wide"
+                  >90% <span data-i18n="tech_prof">PROFICIENCY</span></span
+                >
+              </div>
+
+              <!-- Python -->
+              <div
+                class="w-full h-full overflow-hidden bg-white dark:bg-slate-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center justify-center text-center hover:-translate-y-1 transition-transform duration-300 group"
+              >
+                <ion-icon
+                  name="logo-python"
+                  class="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 mx-auto text-4xl md:text-5xl text-blue-500 mb-3 group-hover:scale-110 transition-transform object-contain"
+                ></ion-icon>
+                <h4 class="font-bold text-sm md:text-base mb-2">Python</h4>
+                <div
+                  class="w-full bg-gray-100 dark:bg-slate-700 rounded-full h-1.5 mb-2 mt-auto"
+                >
+                  <div
+                    class="progress-bar bg-blue-500 h-1.5 rounded-full w-0 transition-all duration-1000 ease-out"
+                    data-target="75%"
+                  ></div>
+                </div>
+                <span
+                  class="text-xs sm:text-sm text-gray-500 dark:text-gray-400 font-medium tracking-wide"
+                  >75% <span data-i18n="tech_prof">PROFICIENCY</span></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer
+      id="contact"
+      class="mt-12 border-t border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-slate-900 transition-colors duration-300 pb-12 pt-16 md:pt-20 px-6 md:px-12 lg:px-24"
+    >
+      <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-16">
+        <div class="flex-1 animate-on-scroll text-center lg:text-left">
+          <h2
+            class="text-3xl md:text-4xl font-serif font-bold mb-4"
+            data-i18n="contact_title"
+          >
+            Let's work together.
+          </h2>
+          <p
+            class="text-gray-600 dark:text-gray-400 mb-8 max-w-sm mx-auto lg:mx-0"
+            data-i18n="contact_desc"
+          >
+            Whether you have an idea for a business or a sophisticated web
+            application, feel free to reach out.
+          </p>
+          <form class="space-y-6 max-w-md mx-auto lg:mx-0">
+            <div>
+              <input
+                type="text"
+                data-i18n-placeholder="contact_name_ph"
+                placeholder="Your Name"
+                class="w-full bg-transparent border-b border-gray-300 dark:border-gray-700 py-3 focus:outline-none focus:border-blue-500 transition-colors text-gray-900 dark:text-white"
+              />
+            </div>
+            <div>
+              <input
+                type="email"
+                data-i18n-placeholder="contact_email_ph"
+                placeholder="Your Email"
+                class="w-full bg-transparent border-b border-gray-300 dark:border-gray-700 py-3 focus:outline-none focus:border-blue-500 transition-colors text-gray-900 dark:text-white"
+              />
+            </div>
+            <div>
+              <textarea
+                rows="3"
+                data-i18n-placeholder="contact_msg_ph"
+                placeholder="Your Message"
+                class="w-full bg-transparent border-b border-gray-300 dark:border-gray-700 py-3 focus:outline-none focus:border-blue-500 transition-colors resize-none text-gray-900 dark:text-white"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="px-8 py-3 bg-gray-900 text-white dark:bg-white dark:text-gray-900 font-medium rounded-full hover:shadow-lg transition-all flex items-center justify-center gap-2 w-full lg:w-auto"
+            >
+              <span data-i18n="contact_send">Send Message</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+          </form>
+        </div>
+        <div
+          class="lg:w-1/3 animate-on-scroll flex flex-col items-center lg:items-start"
+        >
+          <h3 class="text-lg font-semibold mb-6" data-i18n="contact_connect">
+            Connect
+          </h3>
+          <div class="space-y-4">
+            <a
+              href="https://www.linkedin.com/in/insightaa"
+              target="_blank"
+              rel="noopener"
+              class="flex items-center gap-4 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            >
+              <ion-icon name="logo-linkedin" class="text-2xl"></ion-icon>
+              <span class="font-medium">LinkedIn</span>
+            </a>
+            <a
+              href="https://github.com/patrik121212"
+              target="_blank"
+              rel="noopener"
+              class="flex items-center gap-4 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
+            >
+              <ion-icon name="logo-github" class="text-2xl"></ion-icon>
+              <span class="font-medium">GitHub</span>
+            </a>
+            <a
+              href="https://tiktok.com/@insightaa"
+              target="_blank"
+              rel="noopener"
+              class="flex items-center gap-4 text-gray-600 dark:text-gray-400 hover:text-pink-600 dark:hover:text-pink-400 transition-colors"
+            >
+              <ion-icon name="logo-tiktok" class="text-2xl"></ion-icon>
+              <span class="font-medium">Tiktok</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-7xl mx-auto mt-16 md:mt-20 pt-8 border-t border-gray-200 dark:border-gray-800 text-center lg:text-left"
+      >
+        <p class="text-sm text-gray-500" data-i18n="contact_rights">
+          &copy; 2026 Patrik Tangdilintin. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Link to external JS -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
