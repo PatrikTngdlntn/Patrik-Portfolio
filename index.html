@@ -205,7 +205,7 @@
               <ion-icon name="logo-github" class="text-2xl"></ion-icon>
             </a>
             <a
-              href="https://linkedin.com/"
+              href="https://www.linkedin.com/in/insightaa"
               target="_blank"
               rel="noopener"
               class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
@@ -215,7 +215,7 @@
             </a>
             <!-- instagram -->
             <a
-              href="https://instagram.com/"
+              href="https://instagram.com/insightaa"
               target="_blank"
               rel="noopener"
               class="hover:text-pink-600 dark:hover:text-pink-400 transition-colors"
@@ -223,16 +223,15 @@
             >
               <ion-icon name="logo-instagram" class="text-2xl"></ion-icon>
             </a>
-            <!-- Tiktok -->
+            <!-- whatsapp -->
             <a
-              href="https://tiktok.com/@insightaa"
+              href="https://wa.me/6285210428116"
               target="_blank"
               rel="noopener"
-              class="hover:text-gray-900 dark:hover:text-white transition-colors flex items-center gap-1"
-              aria-label="TikTok"
+              class="hover:text-green-600 dark:hover:text-green-400 transition-colors"
+              aria-label="WhatsApp"
             >
-              <ion-icon name="logo-tiktok" class="text-2xl"></ion-icon>
-              <span class="text-sm font-medium"></span>
+              <ion-icon name="logo-whatsapp" class="text-2xl"></ion-icon>
             </a>
           </div>
 
@@ -248,7 +247,8 @@
           <!-- Buttons side by side -->
           <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
             <a
-              href="#"
+              href="./assets/CV-Patrik-Tangdilintin.pdf"
+              download
               class="px-8 py-3.5 bg-gray-900 text-white dark:bg-white dark:text-gray-900 font-medium rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2 group"
             >
               <span data-i18n="hero_download_cv">Download CV</span>
@@ -577,7 +577,124 @@
             <div
               class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8"
             >
-              <!-- Project 1: Restoranku -->
+              <!-- Project 1: Personal Finance OCR (Featured) -->
+              <div
+                class="group bg-gray-50 dark:bg-slate-800 rounded-2xl border-2 border-blue-400 dark:border-blue-500 overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col"
+              >
+                <div
+                  class="aspect-[4/3] relative overflow-hidden bg-gray-200 dark:bg-slate-700"
+                >
+                  <img
+                    src="./assets/Pesonalfinance.png"
+                    alt="Personal Finance App — OCR-Powered Finance Tracker"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6"
+                  >
+                    <a
+                      href="https://github.com/PatrikTngdlntn/personal-finance-app"
+                      target="_blank"
+                      rel="noopener"
+                      class="w-12 h-12 bg-white text-gray-900 rounded-full flex items-center justify-center shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 hover:bg-gray-100"
+                      aria-label="GitHub Repository"
+                    >
+                      <ion-icon name="logo-github" class="text-2xl"></ion-icon>
+                    </a>
+                  </div>
+                  <!-- Featured Badge -->
+                  <span
+                    class="absolute top-3 left-3 px-3 py-1 bg-blue-600 text-white text-[10px] font-bold uppercase tracking-widest rounded-full shadow-md flex items-center gap-1"
+                  >
+                    <ion-icon
+                      name="star"
+                      class="text-yellow-300 text-xs"
+                    ></ion-icon>
+                    Featured
+                  </span>
+                </div>
+                <div class="p-5 md:p-6 flex flex-col flex-1">
+                  <div class="flex items-center flex-wrap gap-2 mb-2">
+                    <h3 class="text-lg md:text-xl font-bold">
+                      Personal Finance App
+                    </h3>
+                    <span
+                      class="px-2 py-0.5 bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 text-[10px] font-semibold rounded-full"
+                      >OCR Powered</span
+                    >
+                  </div>
+                  <p
+                    class="text-gray-600 dark:text-gray-400 text-sm mb-4 leading-relaxed flex-1"
+                    data-i18n="project2_desc"
+                  >
+                    Manual expense tracking is tedious and error-prone. Built an
+                    intelligent finance tracker with Laravel 12 &amp; Tesseract
+                    OCR that automatically extracts transaction data from
+                    scanned receipts — eliminating manual data entry and
+                    enabling smart budgeting through visual analytics backed by
+                    PostgreSQL.
+                  </p>
+                  <!-- Feature highlights -->
+                  <ul
+                    class="text-xs text-gray-500 dark:text-gray-400 space-y-1.5 mb-4"
+                  >
+                    <li class="flex items-center gap-2">
+                      <ion-icon
+                        name="checkmark-circle"
+                        class="text-green-500 text-sm flex-shrink-0"
+                      ></ion-icon>
+                      <span data-i18n="proj2_f1"
+                        >Automated receipt scanning with Tesseract OCR
+                        engine</span
+                      >
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <ion-icon
+                        name="checkmark-circle"
+                        class="text-green-500 text-sm flex-shrink-0"
+                      ></ion-icon>
+                      <span data-i18n="proj2_f2"
+                        >Smart expense categorization &amp; monthly budget
+                        planning</span
+                      >
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <ion-icon
+                        name="checkmark-circle"
+                        class="text-green-500 text-sm flex-shrink-0"
+                      ></ion-icon>
+                      <span data-i18n="proj2_f3"
+                        >Visual spending analytics &amp; exportable financial
+                        reports</span
+                      >
+                    </li>
+                  </ul>
+                  <div class="flex flex-wrap gap-2 text-xs font-medium">
+                    <span
+                      class="px-2.5 py-1 bg-red-50 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-md"
+                      >Laravel 12</span
+                    >
+                    <span
+                      class="px-2.5 py-1 bg-green-50 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-md"
+                      >Tesseract OCR</span
+                    >
+                    <span
+                      class="px-2.5 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-md"
+                      >PostgreSQL</span
+                    >
+                    <span
+                      class="px-2.5 py-1 bg-purple-50 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-md"
+                      >Chart.js</span
+                    >
+                    <span
+                      class="px-2.5 py-1 bg-teal-50 dark:bg-teal-900/30 text-teal-600 dark:text-teal-400 rounded-md"
+                      >Tailwind CSS</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 2: Restoranku -->
               <div
                 class="group bg-gray-50 dark:bg-slate-800 rounded-2xl border border-gray-100 dark:border-gray-700 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
               >
@@ -585,7 +702,7 @@
                   class="aspect-[4/3] relative overflow-hidden bg-gray-200 dark:bg-slate-700"
                 >
                   <img
-                    src="../assets/restoranku.png"
+                    src="./assets/restoranku.png"
                     alt="Restoranku — Restaurant Management System"
                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
@@ -614,12 +731,12 @@
                     class="text-gray-600 dark:text-gray-400 text-sm mb-4 leading-relaxed flex-1"
                     data-i18n="project1_desc"
                   >
-                    An advanced Laravel 12 restaurant application featuring QR
-                    Code ordering and real-time transaction management.
-                    Integrated with Midtrans Payment Gateway for automated QRIS
-                    payments, the system utilizes secure role-based
-                    authentication for Admins, Cashiers, and Chefs, complete
-                    with interactive sales analytics.
+                    Manual restaurant ordering creates communication gaps
+                    between customers, cashiers, and kitchen staff — causing
+                    order errors and slow service. Built a full-stack management
+                    system with QR Code digital ordering, Midtrans QRIS payment
+                    gateway, and a role-based dashboard (Admin, Cashier, Chef)
+                    with real-time order tracking and sales analytics.
                   </p>
                   <!-- Feature highlights -->
                   <ul
@@ -631,7 +748,8 @@
                         class="text-green-500 text-sm flex-shrink-0"
                       ></ion-icon>
                       <span data-i18n="proj1_f1"
-                        >Midtrans Payment Gateway (QRIS & Tunai)</span
+                        >QR Code table ordering — customers order from their
+                        phone</span
                       >
                     </li>
                     <li class="flex items-center gap-2">
@@ -640,7 +758,8 @@
                         class="text-green-500 text-sm flex-shrink-0"
                       ></ion-icon>
                       <span data-i18n="proj1_f2"
-                        >QR Code Menu & Dynamic Analytics Dashboard</span
+                        >Midtrans QRIS payment gateway for cashless
+                        transactions</span
                       >
                     </li>
                     <li class="flex items-center gap-2">
@@ -649,7 +768,8 @@
                         class="text-green-500 text-sm flex-shrink-0"
                       ></ion-icon>
                       <span data-i18n="proj1_f3"
-                        >Multi-role Authentication (Admin, Kasir, Chef)</span
+                        >Multi-role dashboard (Admin, Cashier, Chef) + live
+                        analytics</span
                       >
                     </li>
                   </ul>
@@ -668,111 +788,17 @@
                     >
                     <span
                       class="px-2.5 py-1 bg-teal-50 dark:bg-teal-900/30 text-teal-600 dark:text-teal-400 rounded-md"
-                      >Tailwind</span
+                      >Tailwind CSS</span
+                    >
+                    <span
+                      class="px-2.5 py-1 bg-orange-50 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400 rounded-md"
+                      >Midtrans</span
                     >
                   </div>
                 </div>
               </div>
 
-              <!-- Project 2: Personal Finance OCR -->
-              <div
-                class="group bg-gray-50 dark:bg-slate-800 rounded-2xl border border-gray-100 dark:border-gray-700 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
-              >
-                <div
-                  class="aspect-[4/3] relative overflow-hidden bg-gray-200 dark:bg-slate-700"
-                >
-                  <img
-                    src="../assets/Pesonalfinance.png"
-                    alt="Personal Finance — OCR-Powered Finance Tracker"
-                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div
-                    class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6"
-                  >
-                    <a
-                      href="https://github.com/PatrikTngdlntn/personal-finance-app"
-                      target="_blank"
-                      rel="noopener"
-                      class="w-12 h-12 bg-white text-gray-900 rounded-full flex items-center justify-center shadow-lg transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300 hover:bg-gray-100"
-                      aria-label="GitHub Repository"
-                    >
-                      <ion-icon name="logo-github" class="text-2xl"></ion-icon>
-                    </a>
-                  </div>
-                  <!-- Badge -->
-                  <span
-                    class="absolute top-3 left-3 px-3 py-1 bg-emerald-600 text-white text-[10px] font-bold uppercase tracking-widest rounded-full shadow-md"
-                    >OCR Powered</span
-                  >
-                </div>
-                <div class="p-5 md:p-6 flex flex-col flex-1">
-                  <h3 class="text-lg md:text-xl font-bold mb-2">
-                    Personal Finance
-                  </h3>
-                  <p
-                    class="text-gray-600 dark:text-gray-400 text-sm mb-4 leading-relaxed flex-1"
-                    data-i18n="project2_desc"
-                  >
-                    An intelligent personal finance tracker powered by OCR
-                    technology that automatically scans and extracts transaction
-                    data from receipts &amp; invoices. Features smart expense
-                    categorization, monthly budget planning, visual spending
-                    analytics, and exportable financial reports.
-                  </p>
-                  <!-- Feature highlights -->
-                  <ul
-                    class="text-xs text-gray-500 dark:text-gray-400 space-y-1.5 mb-4"
-                  >
-                    <li class="flex items-center gap-2">
-                      <ion-icon
-                        name="checkmark-circle"
-                        class="text-green-500 text-sm flex-shrink-0"
-                      ></ion-icon>
-                      <span data-i18n="proj2_f1"
-                        >OCR receipt scanning &amp; auto-extraction</span
-                      >
-                    </li>
-                    <li class="flex items-center gap-2">
-                      <ion-icon
-                        name="checkmark-circle"
-                        class="text-green-500 text-sm flex-shrink-0"
-                      ></ion-icon>
-                      <span data-i18n="proj2_f2"
-                        >Smart expense categorization &amp; budgeting</span
-                      >
-                    </li>
-                    <li class="flex items-center gap-2">
-                      <ion-icon
-                        name="checkmark-circle"
-                        class="text-green-500 text-sm flex-shrink-0"
-                      ></ion-icon>
-                      <span data-i18n="proj2_f3"
-                        >Visual spending analytics &amp; reports</span
-                      >
-                    </li>
-                  </ul>
-                  <div class="flex flex-wrap gap-2 text-xs font-medium">
-                    <span
-                      class="px-2.5 py-1 bg-red-50 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-md"
-                      >Laravel 12</span
-                    >
-                    <span
-                      class="px-2.5 py-1 bg-green-50 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-md"
-                      >Tesseract OCR</span
-                    >
-                    <span
-                      class="px-2.5 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-md"
-                      >MySQL</span
-                    >
-                    <span
-                      class="px-2.5 py-1 bg-purple-50 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-md"
-                      >Chart.js</span
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <!-- Project 3: DBSCAN Clustering (Thesis) -->
+              <!-- Project 3: Vehicle Insurance Customer Segmentation (DBSCAN) -->
               <div
                 class="group bg-gray-50 dark:bg-slate-800 rounded-2xl border border-gray-100 dark:border-gray-700 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
               >
@@ -781,7 +807,7 @@
                 >
                   <img
                     src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?fit=crop&w=600&q=80"
-                    alt="DBSCAN Clustering — Thesis Research Project"
+                    alt="Vehicle Insurance Customer Segmentation — DBSCAN Thesis Research"
                     class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div
@@ -800,22 +826,23 @@
                   <!-- Badge -->
                   <span
                     class="absolute top-3 left-3 px-3 py-1 bg-indigo-600 text-white text-[10px] font-bold uppercase tracking-widest rounded-full shadow-md"
-                    >Thesis Project</span
+                    >Thesis Research</span
                   >
                 </div>
                 <div class="p-5 md:p-6 flex flex-col flex-1">
                   <h3 class="text-lg md:text-xl font-bold mb-2">
-                    DBSCAN Clustering
+                    Vehicle Insurance Segmentation
                   </h3>
                   <p
                     class="text-gray-600 dark:text-gray-400 text-sm mb-4 leading-relaxed flex-1"
                     data-i18n="project3_desc"
                   >
-                    A data science research project implementing the DBSCAN
-                    (Density-Based Spatial Clustering) algorithm for vehicle
-                    insurance product sales segmentation. Analyzes real-world
-                    purchase patterns and premium price distributions to
-                    identify distinct customer segments, enabling data-driven
+                    Insurance companies applying broad marketing strategies
+                    without understanding customer behavior miss conversion
+                    opportunities. Implemented DBSCAN clustering on a real
+                    vehicle insurance sales dataset to identify distinct
+                    customer segments by purchase frequency &amp; premium price
+                    distributions — providing data-driven insights for targeted
                     marketing strategies.
                   </p>
                   <!-- Feature highlights -->
@@ -828,7 +855,8 @@
                         class="text-green-500 text-sm flex-shrink-0"
                       ></ion-icon>
                       <span data-i18n="proj3_f1"
-                        >DBSCAN density-based clustering engine</span
+                        >DBSCAN density-based clustering on real insurance
+                        data</span
                       >
                     </li>
                     <li class="flex items-center gap-2">
@@ -837,8 +865,8 @@
                         class="text-green-500 text-sm flex-shrink-0"
                       ></ion-icon>
                       <span data-i18n="proj3_f2"
-                        >Interactive data visualization &amp; cluster
-                        mapping</span
+                        >Customer segmentation by purchase pattern &amp; premium
+                        price</span
                       >
                     </li>
                     <li class="flex items-center gap-2">
@@ -847,7 +875,8 @@
                         class="text-green-500 text-sm flex-shrink-0"
                       ></ion-icon>
                       <span data-i18n="proj3_f3"
-                        >Customer segmentation &amp; pattern analysis</span
+                        >Data visualization with Matplotlib — basis for S1
+                        thesis</span
                       >
                     </li>
                   </ul>
@@ -857,7 +886,7 @@
                       >Python</span
                     >
                     <span
-                      class="px-2.5 py-1 bg-purple-50 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-md"
+                      class="px-2.5 py-1 bg-teal-50 dark:bg-teal-900/30 text-teal-600 dark:text-teal-400 rounded-md"
                       >Pandas</span
                     >
                     <span
@@ -1030,264 +1059,426 @@
             </div>
           </div>
 
-          <!-- Tab: Tech Stack -->
+          <!-- Tab: Tech & Tools -->
           <div id="tab-tech" class="tab-pane hidden animate-on-scroll">
-            <div
-              class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 w-full"
-            >
-              <!-- PHP Laravel -->
-              <div
-                class="w-full h-full overflow-hidden bg-white dark:bg-slate-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center justify-center text-center hover:-translate-y-1 transition-transform duration-300 group"
-              >
-                <ion-icon
-                  name="logo-laravel"
-                  class="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 mx-auto text-4xl md:text-5xl text-red-600 mb-3 group-hover:scale-110 transition-transform object-contain"
-                ></ion-icon>
-                <h4 class="font-bold text-sm md:text-base mb-2">PHP Laravel</h4>
-                <div
-                  class="w-full bg-gray-100 dark:bg-slate-700 rounded-full h-1.5 mb-2 mt-auto"
-                >
+            <div class="space-y-10">
+              <!-- Category: Frontend -->
+              <div>
+                <div class="flex items-center gap-3 mb-5">
                   <div
-                    class="progress-bar bg-red-600 h-1.5 rounded-full w-0 transition-all duration-1000 ease-out"
-                    data-target="85%"
+                    class="w-8 h-8 rounded-lg bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center flex-shrink-0"
+                  >
+                    <ion-icon
+                      name="code-slash-outline"
+                      class="text-orange-600 dark:text-orange-400 text-lg"
+                    ></ion-icon>
+                  </div>
+                  <h3 class="text-base md:text-lg font-semibold">Frontend</h3>
+                  <div
+                    class="flex-1 h-px bg-gray-100 dark:bg-gray-700 ml-2"
                   ></div>
                 </div>
-                <span
-                  class="text-xs sm:text-sm text-gray-500 dark:text-gray-400 font-medium tracking-wide"
-                  >85% <span data-i18n="tech_prof">PROFICIENCY</span></span
+                <div
+                  class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
                 >
+                  <div
+                    class="bg-white dark:bg-slate-800 rounded-2xl p-5 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center text-center hover:-translate-y-1 transition-transform duration-300 group"
+                  >
+                    <ion-icon
+                      name="logo-html5"
+                      class="text-4xl md:text-5xl text-orange-500 mb-3 group-hover:scale-110 transition-transform"
+                    ></ion-icon>
+                    <h4 class="font-bold text-sm md:text-base mb-2">HTML5</h4>
+                    <span
+                      class="px-2.5 py-0.5 text-[11px] font-semibold rounded-full bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300"
+                      >Core Skill</span
+                    >
+                  </div>
+                  <div
+                    class="bg-white dark:bg-slate-800 rounded-2xl p-5 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center text-center hover:-translate-y-1 transition-transform duration-300 group"
+                  >
+                    <ion-icon
+                      name="color-palette-outline"
+                      class="text-4xl md:text-5xl text-teal-500 mb-3 group-hover:scale-110 transition-transform"
+                    ></ion-icon>
+                    <h4 class="font-bold text-sm md:text-base mb-2">
+                      Tailwind CSS
+                    </h4>
+                    <span
+                      class="px-2.5 py-0.5 text-[11px] font-semibold rounded-full bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300"
+                      >Core Skill</span
+                    >
+                  </div>
+                  <div
+                    class="bg-white dark:bg-slate-800 rounded-2xl p-5 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center text-center hover:-translate-y-1 transition-transform duration-300 group"
+                  >
+                    <ion-icon
+                      name="logo-javascript"
+                      class="text-4xl md:text-5xl text-yellow-500 mb-3 group-hover:scale-110 transition-transform"
+                    ></ion-icon>
+                    <h4 class="font-bold text-sm md:text-base mb-2">
+                      JavaScript
+                    </h4>
+                    <span
+                      class="px-2.5 py-0.5 text-[11px] font-semibold rounded-full bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300"
+                      >Proficient</span
+                    >
+                  </div>
+                  <div
+                    class="bg-white dark:bg-slate-800 rounded-2xl p-5 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center text-center hover:-translate-y-1 transition-transform duration-300 group"
+                  >
+                    <ion-icon
+                      name="layers-outline"
+                      class="text-4xl md:text-5xl text-red-400 mb-3 group-hover:scale-110 transition-transform"
+                    ></ion-icon>
+                    <h4 class="font-bold text-sm md:text-base mb-2">
+                      Blade Template
+                    </h4>
+                    <span
+                      class="px-2.5 py-0.5 text-[11px] font-semibold rounded-full bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300"
+                      >Proficient</span
+                    >
+                  </div>
+                </div>
               </div>
 
-              <!-- PostgreSQL -->
-              <div
-                class="w-full h-full overflow-hidden bg-white dark:bg-slate-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center justify-center text-center hover:-translate-y-1 transition-transform duration-300 group"
-              >
-                <ion-icon
-                  name="server-outline"
-                  class="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 mx-auto text-4xl md:text-5xl text-blue-500 mb-3 group-hover:scale-110 transition-transform object-contain"
-                ></ion-icon>
-                <h4 class="font-bold text-sm md:text-base mb-2">PostgreSQL</h4>
-                <div
-                  class="w-full bg-gray-100 dark:bg-slate-700 rounded-full h-1.5 mb-2 mt-auto"
-                >
+              <!-- Category: Backend -->
+              <div>
+                <div class="flex items-center gap-3 mb-5">
                   <div
-                    class="progress-bar bg-blue-500 h-1.5 rounded-full w-0 transition-all duration-1000 ease-out"
-                    data-target="75%"
+                    class="w-8 h-8 rounded-lg bg-red-100 dark:bg-red-900/30 flex items-center justify-center flex-shrink-0"
+                  >
+                    <ion-icon
+                      name="server-outline"
+                      class="text-red-600 dark:text-red-400 text-lg"
+                    ></ion-icon>
+                  </div>
+                  <h3 class="text-base md:text-lg font-semibold">Backend</h3>
+                  <div
+                    class="flex-1 h-px bg-gray-100 dark:bg-gray-700 ml-2"
                   ></div>
                 </div>
-                <span
-                  class="text-xs sm:text-sm text-gray-500 dark:text-gray-400 font-medium tracking-wide"
-                  >75% <span data-i18n="tech_prof">PROFICIENCY</span></span
+                <div
+                  class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
                 >
+                  <div
+                    class="bg-white dark:bg-slate-800 rounded-2xl p-5 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center text-center hover:-translate-y-1 transition-transform duration-300 group"
+                  >
+                    <ion-icon
+                      name="logo-laravel"
+                      class="text-4xl md:text-5xl text-red-600 mb-3 group-hover:scale-110 transition-transform"
+                    ></ion-icon>
+                    <h4 class="font-bold text-sm md:text-base mb-2">
+                      PHP / Laravel
+                    </h4>
+                    <span
+                      class="px-2.5 py-0.5 text-[11px] font-semibold rounded-full bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300"
+                      >Core Skill</span
+                    >
+                  </div>
+                  <div
+                    class="bg-white dark:bg-slate-800 rounded-2xl p-5 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center text-center hover:-translate-y-1 transition-transform duration-300 group"
+                  >
+                    <ion-icon
+                      name="logo-python"
+                      class="text-4xl md:text-5xl text-blue-500 mb-3 group-hover:scale-110 transition-transform"
+                    ></ion-icon>
+                    <h4 class="font-bold text-sm md:text-base mb-2">Python</h4>
+                    <span
+                      class="px-2.5 py-0.5 text-[11px] font-semibold rounded-full bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300"
+                      >Working Knowledge</span
+                    >
+                  </div>
+                  <div
+                    class="bg-white dark:bg-slate-800 rounded-2xl p-5 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center text-center hover:-translate-y-1 transition-transform duration-300 group"
+                  >
+                    <ion-icon
+                      name="scan-outline"
+                      class="text-4xl md:text-5xl text-emerald-500 mb-3 group-hover:scale-110 transition-transform"
+                    ></ion-icon>
+                    <h4 class="font-bold text-sm md:text-base mb-2">
+                      Tesseract OCR
+                    </h4>
+                    <span
+                      class="px-2.5 py-0.5 text-[11px] font-semibold rounded-full bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300"
+                      >Working Knowledge</span
+                    >
+                  </div>
+                  <div
+                    class="bg-white dark:bg-slate-800 rounded-2xl p-5 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center text-center hover:-translate-y-1 transition-transform duration-300 group"
+                  >
+                    <ion-icon
+                      name="card-outline"
+                      class="text-4xl md:text-5xl text-blue-600 mb-3 group-hover:scale-110 transition-transform"
+                    ></ion-icon>
+                    <h4 class="font-bold text-sm md:text-base mb-2">
+                      Payment API
+                    </h4>
+                    <span
+                      class="px-2.5 py-0.5 text-[11px] font-semibold rounded-full bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300"
+                      >Working Knowledge</span
+                    >
+                  </div>
+                </div>
               </div>
 
-              <!-- React.js -->
-              <div
-                class="w-full h-full overflow-hidden bg-white dark:bg-slate-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center justify-center text-center hover:-translate-y-1 transition-transform duration-300 group"
-              >
-                <ion-icon
-                  name="logo-react"
-                  class="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 mx-auto text-4xl md:text-5xl text-cyan-400 mb-3 group-hover:scale-110 transition-transform object-contain"
-                ></ion-icon>
-                <h4 class="font-bold text-sm md:text-base mb-2">React.js</h4>
-                <div
-                  class="w-full bg-gray-100 dark:bg-slate-700 rounded-full h-1.5 mb-2 mt-auto"
-                >
+              <!-- Category: Database -->
+              <div>
+                <div class="flex items-center gap-3 mb-5">
                   <div
-                    class="progress-bar bg-cyan-400 h-1.5 rounded-full w-0 transition-all duration-1000 ease-out"
-                    data-target="80%"
+                    class="w-8 h-8 rounded-lg bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center flex-shrink-0"
+                  >
+                    <ion-icon
+                      name="cube-outline"
+                      class="text-blue-600 dark:text-blue-400 text-lg"
+                    ></ion-icon>
+                  </div>
+                  <h3 class="text-base md:text-lg font-semibold">Database</h3>
+                  <div
+                    class="flex-1 h-px bg-gray-100 dark:bg-gray-700 ml-2"
                   ></div>
                 </div>
-                <span
-                  class="text-xs sm:text-sm text-gray-500 dark:text-gray-400 font-medium tracking-wide"
-                  >80% <span data-i18n="tech_prof">PROFICIENCY</span></span
+                <div
+                  class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
                 >
+                  <div
+                    class="bg-white dark:bg-slate-800 rounded-2xl p-5 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center text-center hover:-translate-y-1 transition-transform duration-300 group"
+                  >
+                    <ion-icon
+                      name="server-outline"
+                      class="text-4xl md:text-5xl text-blue-700 dark:text-blue-400 mb-3 group-hover:scale-110 transition-transform"
+                    ></ion-icon>
+                    <h4 class="font-bold text-sm md:text-base mb-2">MySQL</h4>
+                    <span
+                      class="px-2.5 py-0.5 text-[11px] font-semibold rounded-full bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300"
+                      >Proficient</span
+                    >
+                  </div>
+                  <div
+                    class="bg-white dark:bg-slate-800 rounded-2xl p-5 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center text-center hover:-translate-y-1 transition-transform duration-300 group"
+                  >
+                    <ion-icon
+                      name="server-outline"
+                      class="text-4xl md:text-5xl text-indigo-500 mb-3 group-hover:scale-110 transition-transform"
+                    ></ion-icon>
+                    <h4 class="font-bold text-sm md:text-base mb-2">
+                      PostgreSQL
+                    </h4>
+                    <span
+                      class="px-2.5 py-0.5 text-[11px] font-semibold rounded-full bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300"
+                      >Proficient</span
+                    >
+                  </div>
+                </div>
               </div>
 
-              <!-- Node.js -->
-              <div
-                class="w-full h-full overflow-hidden bg-white dark:bg-slate-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center justify-center text-center hover:-translate-y-1 transition-transform duration-300 group"
-              >
-                <ion-icon
-                  name="logo-nodejs"
-                  class="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 mx-auto text-4xl md:text-5xl text-green-500 mb-3 group-hover:scale-110 transition-transform object-contain"
-                ></ion-icon>
-                <h4 class="font-bold text-sm md:text-base mb-2">Node.js</h4>
-                <div
-                  class="w-full bg-gray-100 dark:bg-slate-700 rounded-full h-1.5 mb-2 mt-auto"
-                >
+              <!-- Category: Development Tools -->
+              <div>
+                <div class="flex items-center gap-3 mb-5">
                   <div
-                    class="progress-bar bg-green-500 h-1.5 rounded-full w-0 transition-all duration-1000 ease-out"
-                    data-target="70%"
+                    class="w-8 h-8 rounded-lg bg-gray-100 dark:bg-gray-700 flex items-center justify-center flex-shrink-0"
+                  >
+                    <ion-icon
+                      name="construct-outline"
+                      class="text-gray-600 dark:text-gray-300 text-lg"
+                    ></ion-icon>
+                  </div>
+                  <h3 class="text-base md:text-lg font-semibold">
+                    Development Tools
+                  </h3>
+                  <div
+                    class="flex-1 h-px bg-gray-100 dark:bg-gray-700 ml-2"
                   ></div>
                 </div>
-                <span
-                  class="text-xs sm:text-sm text-gray-500 dark:text-gray-400 font-medium tracking-wide"
-                  >70% <span data-i18n="tech_prof">PROFICIENCY</span></span
+                <div
+                  class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
                 >
+                  <div
+                    class="bg-white dark:bg-slate-800 rounded-2xl p-5 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center text-center hover:-translate-y-1 transition-transform duration-300 group"
+                  >
+                    <ion-icon
+                      name="git-branch-outline"
+                      class="text-4xl md:text-5xl text-orange-600 mb-3 group-hover:scale-110 transition-transform"
+                    ></ion-icon>
+                    <h4 class="font-bold text-sm md:text-base mb-2">Git</h4>
+                    <span
+                      class="px-2.5 py-0.5 text-[11px] font-semibold rounded-full bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300"
+                      >Proficient</span
+                    >
+                  </div>
+                  <div
+                    class="bg-white dark:bg-slate-800 rounded-2xl p-5 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center text-center hover:-translate-y-1 transition-transform duration-300 group"
+                  >
+                    <ion-icon
+                      name="logo-github"
+                      class="text-4xl md:text-5xl text-gray-900 dark:text-white mb-3 group-hover:scale-110 transition-transform"
+                    ></ion-icon>
+                    <h4 class="font-bold text-sm md:text-base mb-2">GitHub</h4>
+                    <span
+                      class="px-2.5 py-0.5 text-[11px] font-semibold rounded-full bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300"
+                      >Proficient</span
+                    >
+                  </div>
+                  <div
+                    class="bg-white dark:bg-slate-800 rounded-2xl p-5 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center text-center hover:-translate-y-1 transition-transform duration-300 group"
+                  >
+                    <ion-icon
+                      name="shapes-outline"
+                      class="text-4xl md:text-5xl text-purple-500 mb-3 group-hover:scale-110 transition-transform"
+                    ></ion-icon>
+                    <h4 class="font-bold text-sm md:text-base mb-2">Figma</h4>
+                    <span
+                      class="px-2.5 py-0.5 text-[11px] font-semibold rounded-full bg-gray-100 dark:bg-slate-700 text-gray-600 dark:text-gray-400"
+                      >Familiar</span
+                    >
+                  </div>
+                  <div
+                    class="bg-white dark:bg-slate-800 rounded-2xl p-5 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center text-center hover:-translate-y-1 transition-transform duration-300 group"
+                  >
+                    <ion-icon
+                      name="code-outline"
+                      class="text-4xl md:text-5xl text-blue-500 mb-3 group-hover:scale-110 transition-transform"
+                    ></ion-icon>
+                    <h4 class="font-bold text-sm md:text-base mb-2">VS Code</h4>
+                    <span
+                      class="px-2.5 py-0.5 text-[11px] font-semibold rounded-full bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300"
+                      >Core Skill</span
+                    >
+                  </div>
+                </div>
               </div>
 
-              <!-- Next.js -->
-              <div
-                class="w-full h-full overflow-hidden bg-white dark:bg-slate-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center justify-center text-center hover:-translate-y-1 transition-transform duration-300 group"
-              >
-                <ion-icon
-                  name="layers-outline"
-                  class="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 mx-auto text-4xl md:text-5xl text-gray-900 dark:text-white mb-3 group-hover:scale-110 transition-transform object-contain"
-                ></ion-icon>
-                <h4 class="font-bold text-sm md:text-base mb-2">Next.js</h4>
-                <div
-                  class="w-full bg-gray-100 dark:bg-slate-700 rounded-full h-1.5 mb-2 mt-auto"
-                >
+              <!-- Category: IT Support & Systems -->
+              <div>
+                <div class="flex items-center gap-3 mb-5">
                   <div
-                    class="progress-bar bg-gray-900 dark:bg-white h-1.5 rounded-full w-0 transition-all duration-1000 ease-out"
-                    data-target="75%"
+                    class="w-8 h-8 rounded-lg bg-green-100 dark:bg-green-900/30 flex items-center justify-center flex-shrink-0"
+                  >
+                    <ion-icon
+                      name="hardware-chip-outline"
+                      class="text-green-600 dark:text-green-400 text-lg"
+                    ></ion-icon>
+                  </div>
+                  <h3 class="text-base md:text-lg font-semibold">
+                    IT Support &amp; Systems
+                  </h3>
+                  <div
+                    class="flex-1 h-px bg-gray-100 dark:bg-gray-700 ml-2"
                   ></div>
                 </div>
-                <span
-                  class="text-xs sm:text-sm text-gray-500 dark:text-gray-400 font-medium tracking-wide"
-                  >75% <span data-i18n="tech_prof">PROFICIENCY</span></span
+                <div
+                  class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
                 >
+                  <div
+                    class="bg-white dark:bg-slate-800 rounded-2xl p-5 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center text-center hover:-translate-y-1 transition-transform duration-300 group"
+                  >
+                    <ion-icon
+                      name="desktop-outline"
+                      class="text-4xl md:text-5xl text-blue-500 mb-3 group-hover:scale-110 transition-transform"
+                    ></ion-icon>
+                    <h4 class="font-bold text-sm md:text-base mb-2">
+                      Windows Admin
+                    </h4>
+                    <span
+                      class="px-2.5 py-0.5 text-[11px] font-semibold rounded-full bg-gray-100 dark:bg-slate-700 text-gray-600 dark:text-gray-400"
+                      >Familiar</span
+                    >
+                  </div>
+                  <div
+                    class="bg-white dark:bg-slate-800 rounded-2xl p-5 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center text-center hover:-translate-y-1 transition-transform duration-300 group"
+                  >
+                    <ion-icon
+                      name="wifi-outline"
+                      class="text-4xl md:text-5xl text-green-500 mb-3 group-hover:scale-110 transition-transform"
+                    ></ion-icon>
+                    <h4 class="font-bold text-sm md:text-base mb-2">
+                      Network Fundamentals
+                    </h4>
+                    <span
+                      class="px-2.5 py-0.5 text-[11px] font-semibold rounded-full bg-gray-100 dark:bg-slate-700 text-gray-600 dark:text-gray-400"
+                      >Familiar</span
+                    >
+                  </div>
+                  <div
+                    class="bg-white dark:bg-slate-800 rounded-2xl p-5 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center text-center hover:-translate-y-1 transition-transform duration-300 group"
+                  >
+                    <ion-icon
+                      name="hardware-chip-outline"
+                      class="text-4xl md:text-5xl text-gray-500 mb-3 group-hover:scale-110 transition-transform"
+                    ></ion-icon>
+                    <h4 class="font-bold text-sm md:text-base mb-2">
+                      Hardware Support
+                    </h4>
+                    <span
+                      class="px-2.5 py-0.5 text-[11px] font-semibold rounded-full bg-gray-100 dark:bg-slate-700 text-gray-600 dark:text-gray-400"
+                      >Familiar</span
+                    >
+                  </div>
+                  <div
+                    class="bg-white dark:bg-slate-800 rounded-2xl p-5 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center text-center hover:-translate-y-1 transition-transform duration-300 group"
+                  >
+                    <ion-icon
+                      name="terminal-outline"
+                      class="text-4xl md:text-5xl text-orange-500 mb-3 group-hover:scale-110 transition-transform"
+                    ></ion-icon>
+                    <h4 class="font-bold text-sm md:text-base mb-2">
+                      Linux / CLI
+                    </h4>
+                    <span
+                      class="px-2.5 py-0.5 text-[11px] font-semibold rounded-full bg-gray-100 dark:bg-slate-700 text-gray-600 dark:text-gray-400"
+                      >Familiar</span
+                    >
+                  </div>
+                </div>
               </div>
 
-              <!-- MySQL -->
+              <!-- Skill Level Legend -->
               <div
-                class="w-full h-full overflow-hidden bg-white dark:bg-slate-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center justify-center text-center hover:-translate-y-1 transition-transform duration-300 group"
+                class="bg-gray-50 dark:bg-slate-800/50 rounded-2xl p-4 border border-gray-100 dark:border-gray-700"
               >
-                <ion-icon
-                  name="cube-outline"
-                  class="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 mx-auto text-4xl md:text-5xl text-blue-800 dark:text-blue-400 mb-3 group-hover:scale-110 transition-transform object-contain"
-                ></ion-icon>
-                <h4 class="font-bold text-sm md:text-base mb-2">MySQL</h4>
-                <div
-                  class="w-full bg-gray-100 dark:bg-slate-700 rounded-full h-1.5 mb-2 mt-auto"
+                <p
+                  class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-3"
                 >
-                  <div
-                    class="progress-bar bg-blue-800 dark:bg-blue-400 h-1.5 rounded-full w-0 transition-all duration-1000 ease-out"
-                    data-target="80%"
-                  ></div>
+                  Skill Level Guide
+                </p>
+                <div class="flex flex-wrap gap-x-6 gap-y-2">
+                  <span class="flex items-center gap-2 text-xs">
+                    <span
+                      class="px-2.5 py-0.5 rounded-full bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 font-semibold"
+                      >Core Skill</span
+                    >
+                    <span class="text-gray-500 dark:text-gray-400"
+                      >Primary strength, used in multiple projects</span
+                    >
+                  </span>
+                  <span class="flex items-center gap-2 text-xs">
+                    <span
+                      class="px-2.5 py-0.5 rounded-full bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300 font-semibold"
+                      >Proficient</span
+                    >
+                    <span class="text-gray-500 dark:text-gray-400"
+                      >Comfortable and productive in real-project usage</span
+                    >
+                  </span>
+                  <span class="flex items-center gap-2 text-xs">
+                    <span
+                      class="px-2.5 py-0.5 rounded-full bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300 font-semibold"
+                      >Working Knowledge</span
+                    >
+                    <span class="text-gray-500 dark:text-gray-400"
+                      >Applied successfully in specific projects</span
+                    >
+                  </span>
+                  <span class="flex items-center gap-2 text-xs">
+                    <span
+                      class="px-2.5 py-0.5 rounded-full bg-gray-100 dark:bg-slate-700 text-gray-600 dark:text-gray-400 font-semibold"
+                      >Familiar</span
+                    >
+                    <span class="text-gray-500 dark:text-gray-400"
+                      >Foundational understanding &amp; hands-on exposure</span
+                    >
+                  </span>
                 </div>
-                <span
-                  class="text-xs sm:text-sm text-gray-500 dark:text-gray-400 font-medium tracking-wide"
-                  >80% <span data-i18n="tech_prof">PROFICIENCY</span></span
-                >
-              </div>
-
-              <!-- JavaScript -->
-              <div
-                class="w-full h-full overflow-hidden bg-white dark:bg-slate-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center justify-center text-center hover:-translate-y-1 transition-transform duration-300 group"
-              >
-                <ion-icon
-                  name="logo-javascript"
-                  class="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 mx-auto text-4xl md:text-5xl text-yellow-500 mb-3 group-hover:scale-110 transition-transform object-contain"
-                ></ion-icon>
-                <h4 class="font-bold text-sm md:text-base mb-2">JavaScript</h4>
-                <div
-                  class="w-full bg-gray-100 dark:bg-slate-700 rounded-full h-1.5 mb-2 mt-auto"
-                >
-                  <div
-                    class="progress-bar bg-yellow-500 h-1.5 rounded-full w-0 transition-all duration-1000 ease-out"
-                    data-target="90%"
-                  ></div>
-                </div>
-                <span
-                  class="text-xs sm:text-sm text-gray-500 dark:text-gray-400 font-medium tracking-wide"
-                  >90% <span data-i18n="tech_prof">PROFICIENCY</span></span
-                >
-              </div>
-
-              <!-- Tailwind CSS -->
-              <div
-                class="w-full h-full overflow-hidden bg-white dark:bg-slate-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center justify-center text-center hover:-translate-y-1 transition-transform duration-300 group"
-              >
-                <ion-icon
-                  name="color-palette-outline"
-                  class="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 mx-auto text-4xl md:text-5xl text-teal-500 mb-3 group-hover:scale-110 transition-transform object-contain"
-                ></ion-icon>
-                <h4 class="font-bold text-sm md:text-base mb-2">
-                  Tailwind CSS
-                </h4>
-                <div
-                  class="w-full bg-gray-100 dark:bg-slate-700 rounded-full h-1.5 mb-2 mt-auto"
-                >
-                  <div
-                    class="progress-bar bg-teal-500 h-1.5 rounded-full w-0 transition-all duration-1000 ease-out"
-                    data-target="95%"
-                  ></div>
-                </div>
-                <span
-                  class="text-xs sm:text-sm text-gray-500 dark:text-gray-400 font-medium tracking-wide"
-                  >95% <span data-i18n="tech_prof">PROFICIENCY</span></span
-                >
-              </div>
-
-              <!-- HTML5 -->
-              <div
-                class="w-full h-full overflow-hidden bg-white dark:bg-slate-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center justify-center text-center hover:-translate-y-1 transition-transform duration-300 group"
-              >
-                <ion-icon
-                  name="logo-html5"
-                  class="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 mx-auto text-4xl md:text-5xl text-orange-500 mb-3 group-hover:scale-110 transition-transform object-contain"
-                ></ion-icon>
-                <h4 class="font-bold text-sm md:text-base mb-2">HTML5</h4>
-                <div
-                  class="w-full bg-gray-100 dark:bg-slate-700 rounded-full h-1.5 mb-2 mt-auto"
-                >
-                  <div
-                    class="progress-bar bg-orange-500 h-1.5 rounded-full w-0 transition-all duration-1000 ease-out"
-                    data-target="95%"
-                  ></div>
-                </div>
-                <span
-                  class="text-xs sm:text-sm text-gray-500 dark:text-gray-400 font-medium tracking-wide"
-                  >95% <span data-i18n="tech_prof">PROFICIENCY</span></span
-                >
-              </div>
-
-              <!-- GitHub -->
-              <div
-                class="w-full h-full overflow-hidden bg-white dark:bg-slate-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center justify-center text-center hover:-translate-y-1 transition-transform duration-300 group"
-              >
-                <ion-icon
-                  name="logo-github"
-                  class="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 mx-auto text-4xl md:text-5xl text-gray-900 dark:text-white mb-3 group-hover:scale-110 transition-transform object-contain"
-                ></ion-icon>
-                <h4 class="font-bold text-sm md:text-base mb-2">GitHub</h4>
-                <div
-                  class="w-full bg-gray-100 dark:bg-slate-700 rounded-full h-1.5 mb-2 mt-auto"
-                >
-                  <div
-                    class="progress-bar bg-gray-900 dark:bg-white h-1.5 rounded-full w-0 transition-all duration-1000 ease-out"
-                    data-target="90%"
-                  ></div>
-                </div>
-                <span
-                  class="text-xs sm:text-sm text-gray-500 dark:text-gray-400 font-medium tracking-wide"
-                  >90% <span data-i18n="tech_prof">PROFICIENCY</span></span
-                >
-              </div>
-
-              <!-- Python -->
-              <div
-                class="w-full h-full overflow-hidden bg-white dark:bg-slate-800 rounded-2xl p-6 border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col items-center justify-center text-center hover:-translate-y-1 transition-transform duration-300 group"
-              >
-                <ion-icon
-                  name="logo-python"
-                  class="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 mx-auto text-4xl md:text-5xl text-blue-500 mb-3 group-hover:scale-110 transition-transform object-contain"
-                ></ion-icon>
-                <h4 class="font-bold text-sm md:text-base mb-2">Python</h4>
-                <div
-                  class="w-full bg-gray-100 dark:bg-slate-700 rounded-full h-1.5 mb-2 mt-auto"
-                >
-                  <div
-                    class="progress-bar bg-blue-500 h-1.5 rounded-full w-0 transition-all duration-1000 ease-out"
-                    data-target="75%"
-                  ></div>
-                </div>
-                <span
-                  class="text-xs sm:text-sm text-gray-500 dark:text-gray-400 font-medium tracking-wide"
-                  >75% <span data-i18n="tech_prof">PROFICIENCY</span></span
-                >
               </div>
             </div>
           </div>
@@ -1298,100 +1489,365 @@
     <!-- Contact & Footer -->
     <footer
       id="contact"
-      class="mt-12 border-t border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-slate-900 transition-colors duration-300 pb-12 pt-16 md:pt-20 px-6 md:px-12 lg:px-24"
+      class="mt-12 border-t border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-slate-900 transition-colors duration-300 pt-16 md:pt-20 px-6 md:px-12 lg:px-24"
     >
-      <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-16">
+      <!-- Contact Section -->
+      <div
+        class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-16 pb-24 lg:pb-32"
+      >
+        <!-- Left: Heading + Form -->
         <div class="flex-1 animate-on-scroll text-center lg:text-left">
+          <!-- Availability Badge -->
+          <span
+            class="inline-flex items-center gap-2 px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-xs font-semibold rounded-full mb-5"
+          >
+            <span class="relative flex h-2 w-2">
+              <span
+                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"
+              ></span>
+              <span
+                class="relative inline-flex rounded-full h-2 w-2 bg-green-500"
+              ></span>
+            </span>
+            Available for Opportunities
+          </span>
           <h2
             class="text-3xl md:text-4xl font-serif font-bold mb-4"
             data-i18n="contact_title"
           >
-            Let's work together.
+            Open to Opportunities
           </h2>
           <p
             class="text-gray-600 dark:text-gray-400 mb-8 max-w-sm mx-auto lg:mx-0"
             data-i18n="contact_desc"
           >
-            Whether you have an idea for a business or a sophisticated web
-            application, feel free to reach out.
+            I'm a Fresh Graduate in Informatics Engineering, actively seeking
+            internship or entry-level positions in Web Development and IT
+            Support. Reach out — I'd love to connect!
           </p>
-          <form class="space-y-6 max-w-md mx-auto lg:mx-0">
+          <!-- Formspree Form -->
+          <!-- SETUP: Replace YOUR_FORM_ID below with your form ID from formspree.io (free account) -->
+          <form
+            action="https://formspree.io/f/YOUR_FORM_ID"
+            method="POST"
+            class="space-y-6 max-w-md mx-auto lg:mx-0"
+            id="contact-form"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Contact — Patrik Tangdilintin Portfolio"
+            />
             <div>
               <input
                 type="text"
+                name="name"
                 data-i18n-placeholder="contact_name_ph"
                 placeholder="Your Name"
+                required
                 class="w-full bg-transparent border-b border-gray-300 dark:border-gray-700 py-3 focus:outline-none focus:border-blue-500 transition-colors text-gray-900 dark:text-white"
               />
             </div>
             <div>
               <input
                 type="email"
+                name="email"
                 data-i18n-placeholder="contact_email_ph"
                 placeholder="Your Email"
+                required
                 class="w-full bg-transparent border-b border-gray-300 dark:border-gray-700 py-3 focus:outline-none focus:border-blue-500 transition-colors text-gray-900 dark:text-white"
               />
             </div>
             <div>
               <textarea
                 rows="3"
+                name="message"
                 data-i18n-placeholder="contact_msg_ph"
                 placeholder="Your Message"
+                required
                 class="w-full bg-transparent border-b border-gray-300 dark:border-gray-700 py-3 focus:outline-none focus:border-blue-500 transition-colors resize-none text-gray-900 dark:text-white"
               ></textarea>
             </div>
             <button
               type="submit"
-              class="px-8 py-3 bg-gray-900 text-white dark:bg-white dark:text-gray-900 font-medium rounded-full hover:shadow-lg transition-all flex items-center justify-center gap-2 w-full lg:w-auto"
+              class="px-8 py-3 bg-gray-900 text-white dark:bg-white dark:text-gray-900 font-medium rounded-full hover:shadow-lg transition-all flex items-center justify-center gap-2 w-full lg:w-auto mb-8"
             >
               <span data-i18n="contact_send">Send Message</span>
               <ion-icon name="arrow-forward-outline"></ion-icon>
             </button>
           </form>
         </div>
+        <!-- Right: Direct Contact Cards + CV Download -->
         <div
-          class="lg:w-1/3 animate-on-scroll flex flex-col items-center lg:items-start"
+          class="lg:w-2/5 animate-on-scroll flex flex-col items-center lg:items-start"
         >
-          <h3 class="text-lg font-semibold mb-6" data-i18n="contact_connect">
-            Connect
+          <h3 class="text-lg font-semibold mb-5" data-i18n="contact_connect">
+            Get In Touch
           </h3>
-          <div class="space-y-4">
+          <div class="space-y-3 w-full">
+            <!-- Email -->
             <a
-              href="https://www.linkedin.com/in/insightaa"
+              href="mailto:tangdilintinpatrik@gmail.com"
+              class="flex items-center gap-4 p-4 rounded-xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-gray-700 shadow-sm text-gray-700 dark:text-gray-300 hover:border-blue-300 dark:hover:border-blue-600 hover:shadow-md transition-all group"
+            >
+              <div
+                class="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center flex-shrink-0 group-hover:bg-blue-600 transition-colors"
+              >
+                <ion-icon
+                  name="mail-outline"
+                  class="text-xl text-blue-600 dark:text-blue-400 group-hover:text-white"
+                ></ion-icon>
+              </div>
+              <div>
+                <p
+                  class="text-xs text-gray-500 dark:text-gray-400 font-medium mb-0.5"
+                >
+                  Email
+                </p>
+                <span class="font-semibold text-sm"
+                  >tangdilintinpatrik@gmail.com</span
+                >
+              </div>
+            </a>
+            <!-- WhatsApp -->
+            <!-- SETUP: Replace 628XXXXXXXXX with your actual WhatsApp number (country code + number, no +) -->
+            <a
+              href="https://wa.me/6285210428116"
               target="_blank"
               rel="noopener"
-              class="flex items-center gap-4 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              class="flex items-center gap-4 p-4 rounded-xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-gray-700 shadow-sm text-gray-700 dark:text-gray-300 hover:border-green-300 dark:hover:border-green-600 hover:shadow-md transition-all group"
             >
-              <ion-icon name="logo-linkedin" class="text-2xl"></ion-icon>
-              <span class="font-medium">LinkedIn</span>
+              <div
+                class="w-10 h-10 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center flex-shrink-0 group-hover:bg-green-500 transition-colors"
+              >
+                <ion-icon
+                  name="logo-whatsapp"
+                  class="text-xl text-green-600 dark:text-green-400 group-hover:text-white"
+                ></ion-icon>
+              </div>
+              <div>
+                <p
+                  class="text-xs text-gray-500 dark:text-gray-400 font-medium mb-0.5"
+                >
+                  WhatsApp
+                </p>
+                <span class="font-semibold text-sm">+6285210428116</span>
+              </div>
             </a>
+            <!-- LinkedIn -->
+            <a
+              href="https://www.linkedin.com/in/patrik-tangdilintin-701397292/"
+              target="_blank"
+              rel="noopener"
+              class="flex items-center gap-4 p-4 rounded-xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-gray-700 shadow-sm text-gray-700 dark:text-gray-300 hover:border-blue-400 dark:hover:border-blue-500 hover:shadow-md transition-all group"
+            >
+              <div
+                class="w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center flex-shrink-0 group-hover:bg-blue-600 transition-colors"
+              >
+                <ion-icon
+                  name="logo-linkedin"
+                  class="text-xl text-blue-600 dark:text-blue-400 group-hover:text-white"
+                ></ion-icon>
+              </div>
+              <div>
+                <p
+                  class="text-xs text-gray-500 dark:text-gray-400 font-medium mb-0.5"
+                >
+                  LinkedIn
+                </p>
+                <span class="font-semibold text-sm"
+                  >linkedin.com/in/insightaa</span
+                >
+              </div>
+            </a>
+            <!-- GitHub -->
             <a
               href="https://github.com/PatrikTngdlntn"
               target="_blank"
               rel="noopener"
-              class="flex items-center gap-4 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
+              class="flex items-center gap-4 p-4 rounded-xl bg-white dark:bg-slate-800 border border-gray-100 dark:border-gray-700 shadow-sm text-gray-700 dark:text-gray-300 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-md transition-all group"
             >
-              <ion-icon name="logo-github" class="text-2xl"></ion-icon>
-              <span class="font-medium">GitHub</span>
+              <div
+                class="w-10 h-10 rounded-full bg-gray-100 dark:bg-slate-700 flex items-center justify-center flex-shrink-0 group-hover:bg-gray-900 dark:group-hover:bg-white transition-colors"
+              >
+                <ion-icon
+                  name="logo-github"
+                  class="text-xl text-gray-800 dark:text-gray-200 group-hover:text-white dark:group-hover:text-gray-900"
+                ></ion-icon>
+              </div>
+              <div>
+                <p
+                  class="text-xs text-gray-500 dark:text-gray-400 font-medium mb-0.5"
+                >
+                  GitHub
+                </p>
+                <span class="font-semibold text-sm"
+                  >github.com/PatrikTngdlntn</span
+                >
+              </div>
             </a>
-            <a
-              href="https://tiktok.com/@insightaa"
-              target="_blank"
-              rel="noopener"
-              class="flex items-center gap-4 text-gray-600 dark:text-gray-400 hover:text-pink-600 dark:hover:text-pink-400 transition-colors"
+          </div>
+          <!-- Download CV CTA -->
+          <div
+            class="mt-6 p-5 bg-blue-50 dark:bg-blue-900/20 rounded-2xl border border-blue-100 dark:border-blue-800 w-full"
+          >
+            <p
+              class="text-sm font-medium text-gray-700 dark:text-gray-300 mb-3"
             >
-              <ion-icon name="logo-tiktok" class="text-2xl"></ion-icon>
-              <span class="font-medium">Tiktok</span>
+              Interested in my background?
+            </p>
+            <a
+              href="./assets/CV-Patrik-Tangdilintin.pdf"
+              download
+              class="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white rounded-full font-medium hover:bg-blue-700 transition-colors text-sm shadow-sm hover:shadow-md"
+            >
+              <ion-icon name="download-outline"></ion-icon>
+              Download CV (PDF)
             </a>
           </div>
         </div>
       </div>
-      <div
-        class="max-w-7xl mx-auto mt-16 md:mt-20 pt-8 border-t border-gray-200 dark:border-gray-800 text-center lg:text-left"
-      >
-        <p class="text-sm text-gray-500" data-i18n="contact_rights">
-          &copy; 2026 Patrik Tangdilintin. All rights reserved.
-        </p>
+
+      <!-- Footer Bottom -->
+      <div class="border-t border-gray-200 dark:border-gray-800 mt-12 lg:mt-16">
+        <div class="max-w-7xl mx-auto py-10">
+          <!-- Footer Grid: Brand | Quick Links | Connect -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <!-- Brand -->
+            <div>
+              <h4 class="font-bold text-base mb-2">Patrik Tangdilintin</h4>
+              <p
+                class="text-sm text-gray-500 dark:text-gray-400 mb-4 leading-relaxed"
+              >
+                Fresh Graduate Teknik Informatika<br />
+                Web Developer &amp; IT Support
+              </p>
+              <div
+                class="inline-flex items-center gap-2 px-3 py-1.5 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-full text-xs font-medium text-green-700 dark:text-green-400"
+              >
+                <span class="relative flex h-2 w-2">
+                  <span
+                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"
+                  ></span>
+                  <span
+                    class="relative inline-flex rounded-full h-2 w-2 bg-green-500"
+                  ></span>
+                </span>
+                Available for Opportunities
+              </div>
+            </div>
+            <!-- Quick Links -->
+            <div>
+              <h4
+                class="font-semibold text-sm uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-4"
+              >
+                Quick Links
+              </h4>
+              <ul class="space-y-2">
+                <li>
+                  <a
+                    href="#home"
+                    class="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#about"
+                    class="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#journey"
+                    class="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                    >Journey</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#projects"
+                    class="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                    >Projects</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    class="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Social Links -->
+            <div>
+              <h4
+                class="font-semibold text-sm uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-4"
+              >
+                Connect
+              </h4>
+              <div class="space-y-3">
+                <a
+                  href="https://www.linkedin.com/in/patrik-tangdilintin-701397292/"
+                  target="_blank"
+                  rel="noopener"
+                  class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                >
+                  <ion-icon
+                    name="logo-linkedin"
+                    class="text-lg flex-shrink-0"
+                  ></ion-icon>
+                  LinkedIn
+                </a>
+                <a
+                  href="https://github.com/PatrikTngdlntn"
+                  target="_blank"
+                  rel="noopener"
+                  class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
+                >
+                  <ion-icon
+                    name="logo-github"
+                    class="text-lg flex-shrink-0"
+                  ></ion-icon>
+                  GitHub
+                </a>
+                <a
+                  href="mailto:tangdilintinpatrik@gmail.com"
+                  class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                >
+                  <ion-icon
+                    name="mail-outline"
+                    class="text-lg flex-shrink-0"
+                  ></ion-icon>
+                  Email
+                </a>
+                <a
+                  href="https://www.instagram.com/ptrktngdlntn/"
+                  target="_blank"
+                  rel="noopener"
+                  class="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-400 hover:text-pink-600 dark:hover:text-pink-400 transition-colors"
+                >
+                  <ion-icon
+                    name="logo-instagram"
+                    class="text-lg flex-shrink-0"
+                  ></ion-icon>
+                  Instagram
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Copyright Bar -->
+          <div
+            class="pt-8 border-t border-gray-100 dark:border-gray-800 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-gray-500 dark:text-gray-400"
+          >
+            <p data-i18n="contact_rights">
+              &copy; 2026 Patrik Tangdilintin. All rights reserved.
+            </p>
+            <p>Designed &amp; Built with HTML, Tailwind CSS &amp; JavaScript</p>
+          </div>
+        </div>
       </div>
     </footer>
 
